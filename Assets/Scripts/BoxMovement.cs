@@ -1,22 +1,30 @@
+using System;
 using UnityEngine;
 
 public class BoxMovement : MonoBehaviour
 {
-    public Trigger_CSplitter splitterTrigger;
-    public BoxCollider2D splitterCollider;
+    public TriggerCSplitter splitterTrigger;
     public GameObject box;
     public BoxCollider2D boxCollider;
+    public GameObject player;
 
     public int direction = 2; //0 up, 1 right, 2 bottom, 3 left
-    public Rigidbody2D m_Rigidbody2D;
+    public Rigidbody2D mRigidbody2D;
     public float boxSpeed = 10f;
-    [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
-    private Vector3 m_Velocity = Vector3.zero;
+    [Range(0, .3f)] [SerializeField] private float mMovementSmoothing = .05f;	// How much to smooth out the movement
+    private Vector3 _mVelocity = Vector3.zero;
     
-    public bool isDecided = false;
-    public bool facingLeft = false;
+    public bool isDecided;
 
-    private string cornerTag = null;
+    private string _cornerTag;
+
+    private Animator _playerAnimator;
+    private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
+
+    private void Start()
+    {
+        _playerAnimator = player.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -29,12 +37,16 @@ public class BoxMovement : MonoBehaviour
                 {
                     if (Input.GetButtonDown("FireGood"))
                     {
+                        _playerAnimator.SetBool(IsInteracting, true);
+                        
                         isDecided = true;
                         direction = 3;
                         boxCollider.gameObject.layer = 6;
                     }
                     else if (Input.GetButtonDown("FireBad"))
                     {
+                        _playerAnimator.SetBool(IsInteracting, true);
+                        
                         isDecided = true;
                         direction = 1;
                         boxCollider.gameObject.layer = 6;
@@ -48,27 +60,27 @@ public class BoxMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 targetVelocity = new Vector2(0, -boxSpeed * 10f);
-        m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        mRigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        if (cornerTag != null && m_Rigidbody2D.velocity.x < 0.1f && m_Rigidbody2D.velocity.y < 0.1f)
+        if (_cornerTag != null && mRigidbody2D.velocity.x < 0.1f && mRigidbody2D.velocity.y < 0.1f)
         {
-            switch (cornerTag)
+            switch (_cornerTag)
             {
                 case "CornerUp":
                     direction = 0;
-                    cornerTag = null;
+                    _cornerTag = null;
                     break;
                 case "CornerRight":
                     direction = 1;
-                    cornerTag = null;
+                    _cornerTag = null;
                     break;
                 case "CornerDown":
                     direction = 2;
-                    cornerTag = null;
+                    _cornerTag = null;
                     break;
                 case "CornerLeft":
                     direction = 3;
-                    cornerTag = null;
+                    _cornerTag = null;
                     break;
             }
         }
@@ -99,16 +111,21 @@ public class BoxMovement : MonoBehaviour
         }
         else if (!isDecided && box.transform.position.y <= 6.75)
         {
-            m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            mRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
-        m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+        mRigidbody2D.velocity = Vector3.SmoothDamp(mRigidbody2D.velocity, targetVelocity, ref _mVelocity, mMovementSmoothing);
     }
 
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.tag.Contains("Corner"))
         {
-            cornerTag = other.gameObject.tag;
+            _cornerTag = other.gameObject.tag;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        _playerAnimator.SetBool(IsInteracting, false);
     }
 }

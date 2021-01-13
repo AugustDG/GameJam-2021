@@ -25,8 +25,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_toilet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/Mongo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
@@ -40,6 +38,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_toilet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerPipe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
-      <workItem from="1610546337197" duration="2255000" />
+      <workItem from="1610546337197" duration="5786000" />
     </task>
     <servers />
   </component>
@@ -177,9 +183,9 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state width="3397" height="160" key="GridCell.Tab.3.right/0.40.3440.1400@0.40.3440.1400" timestamp="1610516089981" />
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610546699323">
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610553791075">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610546699323" />
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610553791075" />
   </component>
 </project>
