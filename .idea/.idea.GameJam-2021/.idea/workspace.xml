@@ -21,7 +21,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Testing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneObject.cs" />
@@ -30,7 +29,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/RotateContinusously.cs" />
@@ -39,6 +37,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -76,10 +77,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3240">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3240" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -95,6 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
+      <workItem from="1610546337197" duration="755000" />
     </task>
     <servers />
   </component>
@@ -175,5 +177,9 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state width="3397" height="160" key="GridCell.Tab.3.right/0.40.3440.1400@0.40.3440.1400" timestamp="1610516089981" />
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610546699323">
+      <screen x="0" y="40" width="3440" height="1400" />
+    </state>
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610546699323" />
   </component>
 </project>

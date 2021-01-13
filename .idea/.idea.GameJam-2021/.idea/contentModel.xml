@@ -27,6 +27,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="BoxMovement.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
