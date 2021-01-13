@@ -180,9 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Q pour fermer le robinet
-
-    E pour boucher le lavabo'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -383,9 +381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Q pour arranger le tuyau
-
-    E pour inonder'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1895,7 +1891,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2084618789}
   - component: {fileID: 2084618790}
-  - component: {fileID: 2084618791}
   m_Layer: 0
   m_Name: PipeSprite
   m_TagString: Untagged
@@ -1968,21 +1963,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2084618791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084618788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60c97aea994ce846a3f68f5751024fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  player: {fileID: 0}
-  collider: {fileID: 0}
 --- !u!1 &2117349251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,7 +2010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 159297378}
   player: {fileID: 321255254}
-  collider: {fileID: 2117349254}
+  itemCollider: {fileID: 2117349254}
 --- !u!61 &2117349254
 BoxCollider2D:
   m_ObjectHideFlags: 0

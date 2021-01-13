@@ -7,7 +7,7 @@ public class Trigger_pipe : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
-    public BoxCollider2D collider;
+    public BoxCollider2D itemCollider;
     private BoxCollider2D playerCollider;
 
     void Start()
@@ -19,15 +19,15 @@ public class Trigger_pipe : MonoBehaviour
     void Update()
     {
 
-        if (collider.IsTouching(playerCollider))
+        if (itemCollider.IsTouching(playerCollider))
         {
             if (Input.GetButtonDown("FireGood"))
             {
-                collider.enabled = false;
+                itemCollider.enabled = false;
             }
             else if (Input.GetButtonDown("FireBad"))
             {
-                collider.enabled = false;
+                itemCollider.enabled = false;
             }
             else
                 text.text = "Q pour arranger le tuyau\nE pour inonder";
