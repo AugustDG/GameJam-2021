@@ -1,6 +1,4 @@
-﻿using System;
-using System.Security.Authentication;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 
 //manages all the database connection
 public class MongoClient
