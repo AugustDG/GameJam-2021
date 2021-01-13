@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://F:/Projects/Dev/Unity/GameJam-2021/Assets/Scripts/BoxMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +51,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ColorAccessibility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Materials/ColorAccessibilityShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Accessibility/ColorBlindFilter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Accessibility/ChannelMixer.shader" />
       </list>
     </option>
   </component>
@@ -106,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
-      <workItem from="1610546337197" duration="7861000" />
+      <workItem from="1610546337197" duration="10838000" />
     </task>
     <servers />
   </component>
