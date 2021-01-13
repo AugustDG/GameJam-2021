@@ -27,16 +27,18 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="C#" t="Include">
-            <e p="GameEvents.cs" t="Include" />
-            <e p="GameSettings.cs" t="Include" />
-            <e p="GameStats.cs" t="Include" />
-          </e>
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="LeaderboardManager.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
+          <e p="Non Behaviours" t="Include">
+            <e p="GameEvents.cs" t="Include" />
+            <e p="GameSettings.cs" t="Include" />
+            <e p="GameStats.cs" t="Include" />
+            <e p="Mongo.cs" t="Include" />
+            <e p="PlayerInfo.cs" t="Include" />
+          </e>
           <e p="Trigger_pipe.cs" t="Include" />
           <e p="Trigger_toilet.cs" t="Include" />
           <e p="Utility" t="Include">
