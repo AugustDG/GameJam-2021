@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
-using TreeEditor;
 using UnityEngine;
 
 public class LoopConstinuously : MonoBehaviour
