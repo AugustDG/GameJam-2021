@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
         GameEvents.ClockStarted += ClockStartedHandler;
     }
 
+    public void Start()
+    {
+        GameEvents.ClockStarted.Invoke(this, EventArgs.Empty);
+    }
+
     private void ClockStartedHandler(object sender, EventArgs args)
     {
         StartCoroutine(ClockTick());
@@ -27,11 +32,11 @@ public class GameManager : MonoBehaviour
     {
         print("Started!");
 
-        if (_tickPos < roundLength)
+        while (_tickPos < roundLength)
         {
             yield return new WaitForSecondsRealtime(roundLength / 60f);
 
-            print($"Time since start:{_tickPos}");
+            print($"Time since start: {_tickPos}");
 
             _tickPos++;
         }
