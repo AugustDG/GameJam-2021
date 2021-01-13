@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Trigger_toilet : MonoBehaviour
 {
-    public TextMeshProUGUI text;
+    public TMP_Text text;
     public GameObject player;
     public BoxCollider2D collider;
     private BoxCollider2D playerCollider;
