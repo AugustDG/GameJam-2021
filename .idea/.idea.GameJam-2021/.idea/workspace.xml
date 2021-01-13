@@ -28,9 +28,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/PlayerInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
       </list>
     </option>
   </component>
@@ -68,10 +69,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3240">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3240" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -86,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
-      <workItem from="1610492224930" duration="13074000" />
+      <workItem from="1610492224930" duration="13912000" />
     </task>
     <servers />
   </component>
