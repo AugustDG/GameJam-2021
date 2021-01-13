@@ -40,4 +40,15 @@ public class Trigger_pipe : MonoBehaviour
             text.text = "";
         }
     }
+
+    IEnumerator loading (ProgressbarRef, duration)
+    {
+        float time = 0.0f;
+        while (time < duration)
+        {
+            ProgressbarRef.progress = time / Mathf.Max(duration, SmallEpsilon);
+            time += Time.deltaTime;
+            yield return new WaitEndOfFrame();
+        }
+    }
 }
