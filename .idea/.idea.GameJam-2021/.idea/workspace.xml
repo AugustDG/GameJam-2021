@@ -17,6 +17,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Section1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,13 +49,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_toilet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerPipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ColorAccessibility.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/ColorAccessibilityShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Accessibility/ColorBlindFilter.cs" />
         <option value="$PROJECT_DIR$/Assets/Accessibility/ChannelMixer.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Section1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
       </list>
     </option>
   </component>

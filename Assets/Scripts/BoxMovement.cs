@@ -30,7 +30,7 @@ public class BoxMovement : MonoBehaviour
     {
         if (!isDecided)
         {
-            if (splitterTrigger.isActivated)
+            if (splitterTrigger.hasBoxWaiting)
             {
                 if (box.transform.position.y <= 6.5)
                 //checker si le highlight est on, s'il ne l'est pas, on le turn on, et apres on fait un else (s'il n'est pas activé) et on desactive SI il est activé
