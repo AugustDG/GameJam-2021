@@ -507,7 +507,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 2
+  m_PixelsPerUnitMultiplier: 0.37
 --- !u!222 &271962906
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 2
+  m_PixelsPerUnitMultiplier: 0.37
 --- !u!222 &601644845
 CanvasRenderer:
   m_ObjectHideFlags: 0
