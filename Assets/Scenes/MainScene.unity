@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030512917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cec2879aa3b6a4c8d772c7a79277d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 8949df0782ff4274da764e2edfe43fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 54656935}
@@ -1895,8 +1895,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2084618789}
   - component: {fileID: 2084618790}
+  - component: {fileID: 2084618791}
   m_Layer: 0
-  m_Name: ToiletSprite
+  m_Name: PipeSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1967,6 +1968,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2084618791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084618788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60c97aea994ce846a3f68f5751024fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  player: {fileID: 0}
+  collider: {fileID: 0}
 --- !u!1 &2117349251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,7 +2025,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117349251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cec2879aa3b6a4c8d772c7a79277d6, type: 3}
+  m_Script: {fileID: 11500000, guid: a60c97aea994ce846a3f68f5751024fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 159297378}

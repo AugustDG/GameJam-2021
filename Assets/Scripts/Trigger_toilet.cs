@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class Trigger_pipe : MonoBehaviour
+public class Trigger_toilet : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public GameObject player;
