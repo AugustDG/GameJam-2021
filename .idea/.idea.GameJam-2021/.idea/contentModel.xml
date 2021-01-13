@@ -41,6 +41,7 @@
             <e p="Mongo.cs" t="Include" />
             <e p="PlayerInfo.cs" t="Include" />
           </e>
+          <e p="timer.cs" t="Include" />
           <e p="Trigger_CSplitter.cs" t="Include" />
           <e p="Trigger_pipe.cs" t="Include" />
           <e p="Trigger_toilet.cs" t="Include" />

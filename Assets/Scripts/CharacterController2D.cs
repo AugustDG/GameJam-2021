@@ -8,9 +8,13 @@ public class CharacterController2D : MonoBehaviour
     private Vector3 m_Velocity = Vector3.zero;
     public int direction = 4; //0 en haut, 1 a droite, 2 en bas, 3 a gauche, 4 idle haut, 5 idle droite, 6 idle bas, 7 idle gauche
 
+    private Animator _animator;
+    private static readonly int Direction = Animator.StringToHash("Direction");
+
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -78,6 +82,9 @@ public class CharacterController2D : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 targetVelocity = new Vector2(0, 0);
+        
+        _animator.SetInteger(Direction, direction);
+        
         switch (direction)
         {
             case 0:
@@ -93,6 +100,7 @@ public class CharacterController2D : MonoBehaviour
                 targetVelocity = new Vector2(-runSpeed * 10f, 0);
                 break;
         }
+
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
     }
     
