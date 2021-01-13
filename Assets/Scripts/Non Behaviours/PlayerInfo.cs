@@ -5,11 +5,13 @@ public class PlayerInfo
 {
     [BsonId] public ObjectId id { get; set; } = ObjectId.GenerateNewId();
     public string Name { get; set; }
-    public int Score { get; set; }
+    public int GoodScore { get; set; }
+    public int BadScore { get; set; }
 
-    public PlayerInfo(string name, int score)
+    public PlayerInfo(string name, int gScore, int bScore)
     {
         Name = name;
-        Score = score;
+        GoodScore = gScore;
+        BadScore = bScore;
     }
 }
