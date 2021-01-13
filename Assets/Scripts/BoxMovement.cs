@@ -31,11 +31,13 @@ public class BoxMovement : MonoBehaviour
                     {
                         isDecided = true;
                         direction = 3;
+                        boxCollider.gameObject.layer = 6;
                     }
                     else if (Input.GetButtonDown("FireBad"))
                     {
                         isDecided = true;
                         direction = 1;
+                        boxCollider.gameObject.layer = 6;
                     }
                 }
             }
