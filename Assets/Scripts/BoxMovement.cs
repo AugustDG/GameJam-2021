@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 
 public class BoxMovement : MonoBehaviour
 {
     public TriggerCSplitter splitterTrigger;
-    public BoxCollider2D splitterCollider;
     public GameObject box;
     public BoxCollider2D boxCollider;
+    public GameObject player;
 
     public int direction = 2; //0 up, 1 right, 2 bottom, 3 left
     public Rigidbody2D mRigidbody2D;
@@ -13,10 +14,17 @@ public class BoxMovement : MonoBehaviour
     [Range(0, .3f)] [SerializeField] private float mMovementSmoothing = .05f;	// How much to smooth out the movement
     private Vector3 _mVelocity = Vector3.zero;
     
-    public bool isDecided = false;
-    public bool facingLeft = false;
+    public bool isDecided;
 
-    private string _cornerTag = null;
+    private string _cornerTag;
+
+    private Animator _playerAnimator;
+    private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
+
+    private void Start()
+    {
+        _playerAnimator = player.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -29,12 +37,16 @@ public class BoxMovement : MonoBehaviour
                 {
                     if (Input.GetButtonDown("FireGood"))
                     {
+                        _playerAnimator.SetBool(IsInteracting, true);
+                        
                         isDecided = true;
                         direction = 3;
                         boxCollider.gameObject.layer = 6;
                     }
                     else if (Input.GetButtonDown("FireBad"))
                     {
+                        _playerAnimator.SetBool(IsInteracting, true);
+                        
                         isDecided = true;
                         direction = 1;
                         boxCollider.gameObject.layer = 6;
@@ -110,5 +122,10 @@ public class BoxMovement : MonoBehaviour
         {
             _cornerTag = other.gameObject.tag;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        _playerAnimator.SetBool(IsInteracting, false);
     }
 }

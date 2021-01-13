@@ -6,8 +6,8 @@ public class TriggerCSplitter : MonoBehaviour
     public TMP_Text text;
     public GameObject player;
     public BoxCollider2D itemCollider;
-    private BoxCollider2D _playerCollider;
     public bool isActivated;
+    private BoxCollider2D _playerCollider;
 
     void Start()
     {
@@ -18,6 +18,7 @@ public class TriggerCSplitter : MonoBehaviour
     void Update()
     {
         isActivated = itemCollider.IsTouching(_playerCollider);
+
         if (isActivated)
         {
             text.text = "Q pour envoyer vers la gauche\nE pour envoyer vers la droite";

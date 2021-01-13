@@ -10,13 +10,17 @@ public class TriggerToilet : MonoBehaviour
     private BoxCollider2D _playerCollider;
 
     public float timeAmount = 10f;
-    private float _time = 0;
     public Image image;
     public Canvas canvas;
+    private float _time;
+
+    private Animator _playerAnimator;
+    private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
 
     void Start()
     {
         _playerCollider = player.GetComponent<BoxCollider2D>();
+        _playerAnimator = player.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,6 +31,7 @@ public class TriggerToilet : MonoBehaviour
         {
             if (Input.GetButton("FireGood"))
             {
+                _playerAnimator.SetBool(IsInteracting, true);
                 if (_time < timeAmount)
                 {
                     _time += Time.deltaTime;
@@ -39,6 +44,7 @@ public class TriggerToilet : MonoBehaviour
             }
             else if (Input.GetButton("FireBad"))
             {
+                _playerAnimator.SetBool(IsInteracting, true);
                 if (_time < timeAmount)
                 {
                     _time += Time.deltaTime;
@@ -53,6 +59,7 @@ public class TriggerToilet : MonoBehaviour
             {
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
+                _playerAnimator.SetBool(IsInteracting, false);
                 text.text = "Q pour fermer le robinet\nE pour boucher le lavabo";
             }
         }
