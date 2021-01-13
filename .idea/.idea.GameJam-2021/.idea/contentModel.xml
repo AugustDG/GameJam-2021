@@ -44,6 +44,7 @@
           <e p="Trigger_pipe.cs" t="Include" />
           <e p="Trigger_toilet.cs" t="Include" />
           <e p="Utility" t="Include">
+            <e p="LeaderboardContainer.cs" t="Include" />
             <e p="LoopConstinuously.cs" t="Include" />
             <e p="RotateContinusously.cs" t="Include" />
             <e p="Testing.cs" t="Include" />

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BoxMovement : MonoBehaviour
@@ -18,6 +16,8 @@ public class BoxMovement : MonoBehaviour
     public bool isDecided = false;
     public bool facingLeft = false;
 
+    private string cornerTag = null;
+
     void Update()
     {
         if (!isDecided)
@@ -25,17 +25,19 @@ public class BoxMovement : MonoBehaviour
             if (splitterTrigger.isActivated)
             {
                 if (box.transform.position.y <= 7)
-                //checker si le highlight est on, s'il ne l'est pas, on le turn on, et apres on fait un else (s'il n'est pas activé) et on desactive SI il est activé
+                //checker si le highlight est on, s'il ne l'est pas, on le turn on, et apres on fait un else (s'il n'est pas activÃ©) et on desactive SI il est activÃ©
                 {
                     if (Input.GetButtonDown("FireGood"))
                     {
                         isDecided = true;
                         direction = 3;
+                        boxCollider.gameObject.layer = 6;
                     }
                     else if (Input.GetButtonDown("FireBad"))
                     {
                         isDecided = true;
                         direction = 1;
+                        boxCollider.gameObject.layer = 6;
                     }
                 }
             }
@@ -45,9 +47,31 @@ public class BoxMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
         Vector3 targetVelocity = new Vector2(0, -boxSpeed * 10f);
-        m_Rigidbody2D.constraints = RigidbodyConstraints2D.None;
+        m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        if (cornerTag != null && m_Rigidbody2D.velocity.x < 0.1f && m_Rigidbody2D.velocity.y < 0.1f)
+        {
+            switch (cornerTag)
+            {
+                case "CornerUp":
+                    direction = 0;
+                    cornerTag = null;
+                    break;
+                case "CornerRight":
+                    direction = 1;
+                    cornerTag = null;
+                    break;
+                case "CornerDown":
+                    direction = 2;
+                    cornerTag = null;
+                    break;
+                case "CornerLeft":
+                    direction = 3;
+                    cornerTag = null;
+                    break;
+            }
+        }
 
         if (isDecided)
         {
@@ -79,5 +103,12 @@ public class BoxMovement : MonoBehaviour
         }
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
     }
-   
+
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.gameObject.tag.Contains("Corner"))
+        {
+            cornerTag = other.gameObject.tag;
+        }
+    }
 }
