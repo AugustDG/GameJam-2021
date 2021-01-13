@@ -20,7 +20,10 @@ public class LeaderboardManager : MonoBehaviour
     {
         endScreenCanvas.enabled = true;
 
-        _leaderboardPlayers = await MongoClient.Instance.DataCollection.Find(info => info.Score > 0).ToListAsync();
+        await MongoClient.Instance.DataCollection.InsertOneAsync(new PlayerInfo(GameStats.PlayerName,
+            GameStats.GoodScore, GameStats.BadScore));
+
+        _leaderboardPlayers = await MongoClient.Instance.DataCollection.Find(info => info.GoodScore > 0 && info.BadScore > 0).ToListAsync();
         
         print(_leaderboardPlayers.Count);
     }
