@@ -15,6 +15,7 @@
             <e p="GameStats.cs" t="Include" />
           </e>
           <e p="CharacterController2D.cs" t="Include" />
+          <e p="CutsceneObject.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
           <e p="Utility" t="Include">
