@@ -40,4 +40,5 @@ public class Trigger_pipe : MonoBehaviour
             text.text = "";
         }
     }
+    
 }
