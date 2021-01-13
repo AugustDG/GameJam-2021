@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BoxMovement : MonoBehaviour
@@ -25,7 +23,7 @@ public class BoxMovement : MonoBehaviour
             if (splitterTrigger.isActivated)
             {
                 if (box.transform.position.y <= 7)
-                //checker si le highlight est on, s'il ne l'est pas, on le turn on, et apres on fait un else (s'il n'est pas activé) et on desactive SI il est activé
+                //checker si le highlight est on, s'il ne l'est pas, on le turn on, et apres on fait un else (s'il n'est pas activÃ©) et on desactive SI il est activÃ©
                 {
                     if (Input.GetButtonDown("FireGood"))
                     {
