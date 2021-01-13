@@ -8,9 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Testing.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -19,6 +17,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Testing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
       </list>
     </option>
   </component>
@@ -74,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
-      <workItem from="1610492224930" duration="3702000" />
+      <workItem from="1610492224930" duration="4397000" />
     </task>
     <servers />
   </component>
@@ -151,63 +150,5 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state width="3397" height="519" key="GridCell.Tab.3.right/0.40.3440.1400@0.40.3440.1400" timestamp="1610495454668" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Testing.cs</url>
-          <line>10</line>
-          <properties documentPath="F:\Projects\Dev\Unity\GameJam-2021\Assets\Scripts\Testing.cs" initialLine="10">
-            <startOffsets>
-              <option value="203" />
-            </startOffsets>
-            <endOffsets>
-              <option value="257" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>36</line>
-          <properties documentPath="F:\Projects\Dev\Unity\GameJam-2021\Assets\Scripts\GameManager.cs" initialLine="36">
-            <startOffsets>
-              <option value="934" />
-            </startOffsets>
-            <endOffsets>
-              <option value="993" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>40</line>
-          <properties documentPath="F:\Projects\Dev\Unity\GameJam-2021\Assets\Scripts\GameManager.cs" initialLine="40">
-            <startOffsets>
-              <option value="1059" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1070" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>43</line>
-          <properties documentPath="F:\Projects\Dev\Unity\GameJam-2021\Assets\Scripts\GameManager.cs" initialLine="43">
-            <startOffsets>
-              <option value="1090" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1109" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
