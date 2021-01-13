@@ -10,18 +10,16 @@ public class Section1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ContactFilter2D filter = new ContactFilter2D();
-        filter.SetLayerMask(LayerMask.GetMask("Box"));
-        //Debug.Log(GetComponent<BoxCollider2D>().OverlapCollider(filter, new Collider2D[50]));
-        if (GetComponent<BoxCollider2D>().OverlapCollider(filter,new Collider2D[50]) > 0)
+        Collider2D[] colliders = new Collider2D[50];
+        int nb = GetComponent<BoxCollider2D>().OverlapCollider(new ContactFilter2D().NoFilter(), new Collider2D[50]);
+        //Debug.Log(nb);
+        isActivated = false;
+        for (int i = 0; i < nb; i++)
         {
-            isActivated = true;
-        } else
-        {
-            isActivated = false;
+            if (colliders[i].gameObject.tag != null)
+                isActivated = isActivated || colliders[i].gameObject.tag.Equals("Box");
         }
-
-        for (int i = 0; i < belts.Length; i++)
+        for (int i = 0; i < nb; i++)
         {
             belts[i].GetComponentInChildren<Animator>().SetBool("isIdle", !isActivated);
         }
