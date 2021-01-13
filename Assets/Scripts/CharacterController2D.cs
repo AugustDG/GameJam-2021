@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
 {
-    [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
+    [Range(0, .3f)] [SerializeField] private float mMovementSmoothing = .05f;	// How much to smooth out the movement
     public float runSpeed = 40f;
-    private Rigidbody2D m_Rigidbody2D;
-    private Vector3 m_Velocity = Vector3.zero;
+    private Rigidbody2D _mRigidbody2D;
+    private Vector3 _mVelocity = Vector3.zero;
     public int direction = 4; //0 en haut, 1 a droite, 2 en bas, 3 a gauche, 4 idle haut, 5 idle droite, 6 idle bas, 7 idle gauche
 
     private Animator _animator;
@@ -13,7 +13,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void Awake()
     {
-        m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        _mRigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
 
@@ -101,7 +101,7 @@ public class CharacterController2D : MonoBehaviour
                 break;
         }
 
-        m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+        _mRigidbody2D.velocity = Vector3.SmoothDamp(_mRigidbody2D.velocity, targetVelocity, ref _mVelocity, mMovementSmoothing);
     }
     
 }

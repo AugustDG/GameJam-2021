@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class timer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
 
     public float timeAmount = 10f;
-    private float time = 0;
-    private Image image;
+    private float _time = 0;
+    private Image _image;
 
     // Start is called before the first frame update
     void Start()
     {
-        image = this.GetComponent<Image>();
+        _image = GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (time < timeAmount)
+        if (_time < timeAmount)
         {
-            time += Time.deltaTime;
-            image.fillAmount = time / timeAmount;
+            _time += Time.deltaTime;
+            _image.fillAmount = _time / timeAmount;
         }
     }
 }

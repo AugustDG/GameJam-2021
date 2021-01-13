@@ -1,23 +1,23 @@
 using TMPro;
 using UnityEngine;
 
-public class Trigger_pipe : MonoBehaviour
+public class TriggerPipe : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
     public BoxCollider2D itemCollider;
-    private BoxCollider2D playerCollider;
+    private BoxCollider2D _playerCollider;
 
     void Start()
     {
-        playerCollider = player.GetComponent<BoxCollider2D>();
+        _playerCollider = player.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (itemCollider.IsTouching(playerCollider))
+        if (itemCollider.IsTouching(_playerCollider))
         {
             if (Input.GetButtonDown("FireGood"))
             {

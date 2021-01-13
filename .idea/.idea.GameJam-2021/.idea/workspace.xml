@@ -41,6 +41,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/timer.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
-      <workItem from="1610546337197" duration="3848000" />
+      <workItem from="1610546337197" duration="4460000" />
     </task>
     <servers />
   </component>

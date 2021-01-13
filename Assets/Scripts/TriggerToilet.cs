@@ -2,35 +2,35 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Trigger_toilet : MonoBehaviour
+public class TriggerToilet : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
-    public BoxCollider2D collider;
-    private BoxCollider2D playerCollider;
+    public BoxCollider2D boxCollider;
+    private BoxCollider2D _playerCollider;
 
     public float timeAmount = 10f;
-    private float time = 0;
+    private float _time = 0;
     public Image image;
     public Canvas canvas;
 
     void Start()
     {
-        playerCollider = player.GetComponent<BoxCollider2D>();
+        _playerCollider = player.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (collider.IsTouching(playerCollider))
+        if (boxCollider.IsTouching(_playerCollider))
         {
             if (Input.GetButton("FireGood"))
             {
-                if (time < timeAmount)
+                if (_time < timeAmount)
                 {
-                    time += Time.deltaTime;
-                    image.fillAmount = time / timeAmount;
+                    _time += Time.deltaTime;
+                    image.fillAmount = _time / timeAmount;
                 }
                 else
                 {
@@ -39,10 +39,10 @@ public class Trigger_toilet : MonoBehaviour
             }
             else if (Input.GetButton("FireBad"))
             {
-                if (time < timeAmount)
+                if (_time < timeAmount)
                 {
-                    time += Time.deltaTime;
-                    image.fillAmount = time / timeAmount;
+                    _time += Time.deltaTime;
+                    image.fillAmount = _time / timeAmount;
                 }
                 else
                 {
@@ -51,8 +51,8 @@ public class Trigger_toilet : MonoBehaviour
             }
             else
             {
-                time = 0f;
-                image.fillAmount = time / timeAmount;
+                _time = 0f;
+                image.fillAmount = _time / timeAmount;
                 text.text = "Q pour fermer le robinet\nE pour boucher le lavabo";
             }
         }

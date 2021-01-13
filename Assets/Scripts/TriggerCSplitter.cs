@@ -1,23 +1,23 @@
 using TMPro;
 using UnityEngine;
 
-public class Trigger_CSplitter : MonoBehaviour
+public class TriggerCSplitter : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
     public BoxCollider2D itemCollider;
-    private BoxCollider2D playerCollider;
-    public bool isActivated = false;
+    private BoxCollider2D _playerCollider;
+    public bool isActivated;
 
     void Start()
     {
-        playerCollider = player.GetComponent<BoxCollider2D>();
+        _playerCollider = player.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        isActivated = itemCollider.IsTouching(playerCollider);
+        isActivated = itemCollider.IsTouching(_playerCollider);
         if (isActivated)
         {
             text.text = "Q pour envoyer vers la gauche\nE pour envoyer vers la droite";
