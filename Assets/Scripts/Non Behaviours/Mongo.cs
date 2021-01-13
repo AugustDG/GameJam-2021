@@ -25,15 +25,7 @@ public class MongoClient
     //Initializes the mongo client
     public MongoClient()
     {
-        //connects and gets the right database from the supplied credentials
-        var settings = MongoClientSettings.FromUrl(new MongoUrl(MONGO_URI));
-        settings.SslSettings = new SslSettings() {EnabledSslProtocols = SslProtocols.Tls12};
-        settings.UseSsl = true;
-        settings.ConnectionMode = ConnectionMode.ReplicaSet;
-        settings.RetryWrites = true;
-        settings.ConnectTimeout = TimeSpan.FromMilliseconds(60000);
-        settings.SocketTimeout = TimeSpan.FromMilliseconds(60000);
-
+        //Creates a client and connects to it with the provided URI
         Client = new MongoDB.Driver.MongoClient(MONGO_URI);
         DataDatabase = Client.GetDatabase(DATA_DATABASE_NAME);
 
