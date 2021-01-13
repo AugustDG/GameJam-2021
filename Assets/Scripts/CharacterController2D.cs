@@ -6,7 +6,7 @@ public class CharacterController2D : MonoBehaviour
     public float runSpeed = 40f;
     private Rigidbody2D m_Rigidbody2D;
     private Vector3 m_Velocity = Vector3.zero;
-    public int direction = 4; //0 en haut, 1 a droite, 2 en bas, 3 a gauche, 4 idle
+    public int direction = 4; //0 en haut, 1 a droite, 2 en bas, 3 a gauche, 4 idle haut, 5 idle droite, 6 idle bas, 7 idle gauche
 
     private void Awake()
     {
@@ -17,27 +17,41 @@ public class CharacterController2D : MonoBehaviour
     {
         if (Input.GetButton("Up"))
         {
-            if (direction == 4)
+            if (direction >= 4)
                 direction = 0;
         }
         else if (Input.GetButton("Down"))
         {
-            if (direction == 4)
+            if (direction >= 4)
                 direction = 2;
         }
         else if (Input.GetButton("Right"))
         {
-            if (direction == 4)
+            if (direction >= 4)
                 direction = 1;
         }
         else if (Input.GetButton("Left"))
         {
-            if (direction == 4)
+            if (direction >= 4)
                 direction = 3;
         }
         else
         {
-            direction = 4;
+            switch (direction)
+            {
+                case 0:
+                    direction = 4;
+                    break;
+                case 1:
+                    direction = 5;
+                    break;
+                case 2:
+                    direction = 6;
+                    break;
+                case 3:
+                    direction = 7;
+                    break;
+            }
         }
         if (Input.GetButtonUp("Up"))
         {
