@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Trigger_toilet : MonoBehaviour
 {
@@ -7,6 +8,11 @@ public class Trigger_toilet : MonoBehaviour
     public GameObject player;
     public BoxCollider2D collider;
     private BoxCollider2D playerCollider;
+
+    public float timeAmount = 10f;
+    private float time = 0;
+    public Image image;
+    public Canvas canvas;
 
     void Start()
     {
@@ -19,16 +25,36 @@ public class Trigger_toilet : MonoBehaviour
 
         if (collider.IsTouching(playerCollider))
         {
-            if (Input.GetButtonDown("FireGood"))
+            if (Input.GetButton("FireGood"))
             {
-                collider.enabled = false;
+                if (time < timeAmount)
+                {
+                    time += Time.deltaTime;
+                    image.fillAmount = time / timeAmount;
+                }
+                else
+                {
+                    canvas.enabled = false;
+                }
             }
-            else if (Input.GetButtonDown("FireBad"))
+            else if (Input.GetButton("FireBad"))
             {
-                collider.enabled = false;
+                if (time < timeAmount)
+                {
+                    time += Time.deltaTime;
+                    image.fillAmount = time / timeAmount;
+                }
+                else
+                {
+                    canvas.enabled = false;
+                }
             }
             else
+            {
+                time = 0f;
+                image.fillAmount = time / timeAmount;
                 text.text = "Q pour fermer le robinet\nE pour boucher le lavabo";
+            }
         }
 
     }
