@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MovementSmoothing: 0.05
-  runSpeed: 0.5
+  runSpeed: 0.2
   direction: 4
 --- !u!95 &5345176679037909539
 Animator:
