@@ -28,11 +28,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/PlayerInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610492211265</updated>
-      <workItem from="1610492224930" duration="14257000" />
+      <workItem from="1610492224930" duration="14969000" />
     </task>
     <servers />
   </component>
