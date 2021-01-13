@@ -35,8 +35,10 @@
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="LeaderboardManager.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
           <e p="Trigger_pipe.cs" t="Include" />
+          <e p="Trigger_toilet.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="Testing.cs" t="Include" />
           </e>
@@ -72,7 +74,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="Trigger_pipe.cs" t="Include" />
       </e>
       <e p="GameJam-2021.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

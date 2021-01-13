@@ -48,7 +48,7 @@ public class CutsceneManager : MonoBehaviour
             _textComp.text += dial[iteration];
             iteration++;
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
         }
     }
 }
