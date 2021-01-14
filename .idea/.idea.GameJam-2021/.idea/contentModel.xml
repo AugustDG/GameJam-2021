@@ -46,6 +46,7 @@
           <e p="Section1.cs" t="Include" />
           <e p="timer.cs" t="Include" />
           <e p="Trigger_camion.cs" t="Include" />
+          <e p="Trigger_douane.cs" t="Include" />
           <e p="Trigger_pistol.cs" t="Include" />
           <e p="TriggerCSplitter.cs" t="Include" />
           <e p="TriggerPipe.cs" t="Include" />

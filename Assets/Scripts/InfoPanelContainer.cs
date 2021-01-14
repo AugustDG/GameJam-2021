@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using DG.Tweening;
 using SOHNE.Accessibility.Colorblindness;
 using TMPro;
@@ -14,7 +15,12 @@ public class InfoPanelContainer : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void ColorblindTypeChangedHandler(int type)
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return)) ColorblindTypeChanged(Colorblindness.Instance.currentType);
+    }
+
+    public void ColorblindTypeChanged(int type)
     {
         StartCoroutine(DisplayInfo(type));
     }

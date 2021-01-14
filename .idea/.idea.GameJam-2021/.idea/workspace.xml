@@ -59,8 +59,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
       </list>
     </option>
   </component>
@@ -202,9 +202,9 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state x="92" y="132" width="3256" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.40.3440.1400@0.40.3440.1400" timestamp="1610557459232" />
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610584446976">
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610593453729">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610584446976" />
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610593453729" />
   </component>
 </project>
