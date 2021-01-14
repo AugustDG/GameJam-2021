@@ -19,6 +19,8 @@ public class Trigger_camion : MonoBehaviour
     private Animator _playerAnimator;
 
     public Trigger_pistol triggerPistolScript;
+    public GameObject actualPistol;
+    private bool fueledUp = false;
 
     void Start()
     {
@@ -29,49 +31,63 @@ public class Trigger_camion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
+        if (!fueledUp)
         {
-            if (Input.GetButton("FireGood"))
+            if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
             {
-                _playerAnimator.SetBool("FuelingUp", true);
-                if (_time < timeAmount)
+                if (Input.GetButton("FireGood"))
                 {
-                    _time += Time.deltaTime;
-                    image.fillAmount = _time / timeAmount;
+                    _playerAnimator.SetBool("FuelingUp", true);
+                    if (_time < timeAmount)
+                    {
+                        actualPistol.SetActive(false);
+                        _time += Time.deltaTime;
+                        image.fillAmount = _time / timeAmount;
+                    }
+                    else
+                    {
+                        fueledUp = true;
+                        actualPistol.SetActive(true);
+                        canvas.enabled = false;
+                        _playerAnimator.SetBool("FuelingUp", false);
+                    }
+                }
+                else if (Input.GetButton("FireBad"))
+                {
+                    _playerAnimator.SetBool("FuelingUp", true);
+                    if (_time < timeAmount)
+                    {
+                        actualPistol.SetActive(false);
+                        _time += Time.deltaTime;
+                        image.fillAmount = _time / timeAmount;
+                    }
+                    else
+                    {
+                        fueledUp = true;
+                        actualPistol.SetActive(true);
+                        canvas.enabled = false;
+                        _playerAnimator.SetBool("FuelingUp", false);
+                    }
                 }
                 else
                 {
-                    canvas.enabled = false;
-                    _playerAnimator.SetBool("FuelingUp", false);
-                }
-            }
-            else if (Input.GetButton("FireBad"))
-            {
-                _playerAnimator.SetBool("FuelingUp", true);
-                if (_time < timeAmount)
-                {
-                    _time += Time.deltaTime;
+                    actualPistol.SetActive(true);
+                    _time = 0f;
                     image.fillAmount = _time / timeAmount;
-                }
-                else
-                {
-                    canvas.enabled = false;
                     _playerAnimator.SetBool("FuelingUp", false);
+                    text.text = "Q pour faire le plein\nE pour verser de l'essence par terre";
                 }
             }
-            else
+            else if (boxCollider.IsTouching(_playerCollider))
+            {
+                text.text = "Il vous manque le pistolet de carburant!";
+            }
+            else if (!boxCollider.IsTouching(_playerCollider))
             {
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
-                _playerAnimator.SetBool("FuelingUp", false);
-                text.text = "Q pour faire le plein\nE pour verser de l'essence par terre";
             }
-        } else if (boxCollider.IsTouching(_playerCollider))
-        {
-            text.text = "Il vous manque le pistolet de carburant!";
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D other)
