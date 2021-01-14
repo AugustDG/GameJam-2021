@@ -7,11 +7,6 @@ public class InfoPanelContainer : MonoBehaviour
 {
     public TMP_Text nameText;
 
-    public void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return)) ColorblindTypeChanged(CustomColorblindness.Instance.CurrentType);

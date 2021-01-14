@@ -11,6 +11,7 @@
     <setting file="mock://F:/Projects/Dev/Unity/GameJam-2021/Assets/Scripts/BoxMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E272CAB7-0219-4EF8-AB5F-B5D9D0D4C417/74/d881752e/ColorblindTypes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/e9/279c7413/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/RotateContinusously.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,10 +57,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
       </list>
     </option>
   </component>
