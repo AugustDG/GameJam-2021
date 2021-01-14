@@ -65,8 +65,6 @@ public class CharacterController2D : MonoBehaviour
                     direction = 7;
                     break;
             }
-            if (derniereDir == 1) derniereDir = 5;
-            if (derniereDir == 3) derniereDir = 7;
         }
         if (Input.GetButtonUp("Up"))
         {

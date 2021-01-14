@@ -18,6 +18,8 @@ public class Trigger_camion : MonoBehaviour
 
     private Animator _playerAnimator;
 
+    public Trigger_pistol triggerPistolScript;
+
     void Start()
     {
         _playerCollider = player.GetComponent<BoxCollider2D>();
@@ -28,7 +30,7 @@ public class Trigger_camion : MonoBehaviour
     void Update()
     {
 
-        if (boxCollider.IsTouching(_playerCollider))
+        if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
         {
             if (Input.GetButton("FireGood"))
             {
@@ -65,6 +67,9 @@ public class Trigger_camion : MonoBehaviour
                 _playerAnimator.SetBool("FuelingUp", false);
                 text.text = "Q pour faire le plein\nE pour verser de l'essence par terre";
             }
+        } else if (boxCollider.IsTouching(_playerCollider))
+        {
+            text.text = "Il vous manque le pistolet de carburant!";
         }
 
     }

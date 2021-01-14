@@ -16,6 +16,7 @@ public class Trigger_pistol : MonoBehaviour
     public Sprite pistolLa;
     public Sprite pistolPasLa;
     public SpriteRenderer pistolSprite;
+    public GameObject actualPistol;
 
     void Start()
     {
@@ -37,16 +38,18 @@ public class Trigger_pistol : MonoBehaviour
                     _playerAnimator.SetTrigger("PickUpFuel");
                     _playerAnimator.SetBool("HasFuel", true);
                     pistolSprite.sprite = pistolPasLa;
+                    actualPistol.SetActive(true);
                 }
                 else
                 {
                     _playerAnimator.SetBool("HasFuel", false);
                     pistolSprite.sprite = pistolLa;
+                    actualPistol.SetActive(false);
                 }
             }
             else
             {
-                text.text = "Q ou E pour intéragir avec le pistolet à gaz";
+                text.text = "Q ou E pour intéragir avec le pistolet de carburant";
             }
         }
 

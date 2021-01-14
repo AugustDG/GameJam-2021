@@ -1224,8 +1224,13 @@ GameObject:
   - component: {fileID: 518934136}
   - component: {fileID: 518934135}
   - component: {fileID: 518934139}
+<<<<<<< Updated upstream
   m_Layer: 0
   m_Name: MainMenuCanvas
+=======
+  m_Layer: 5
+  m_Name: MainMenuCanvass
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
