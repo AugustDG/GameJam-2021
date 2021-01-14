@@ -32,6 +32,48 @@ TextureImporter:
   - first:
       213: 4983129934719697398
     second: bin_full
+  - first:
+      213: 2535247370240311384
+    second: ground_crack
+  - first:
+      213: 3836373905577956440
+    second: paper_ground_1
+  - first:
+      213: -4676466475824062069
+    second: paper_ground_2
+  - first:
+      213: 4696350949408980661
+    second: paper_ground_3
+  - first:
+      213: -4431104414112731768
+    second: box_ground_01
+  - first:
+      213: 987650710171249913
+    second: box_ground_02
+  - first:
+      213: 5612321983182834720
+    second: box_ground_03
+  - first:
+      213: -925448169866563457
+    second: box_ground_04
+  - first:
+      213: 1692494413183702647
+    second: box_ground_05
+  - first:
+      213: -1199619241442701602
+    second: box_ground_06
+  - first:
+      213: 2283167979467855373
+    second: box_ground_07
+  - first:
+      213: 135310424215247441
+    second: box_ground_08
+  - first:
+      213: 2969467567723845581
+    second: box_ground_09
+  - first:
+      213: -8056828318202406996
+    second: box_ground_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -374,6 +416,300 @@ TextureImporter:
       bones: []
       spriteID: 6f1459c1642a72540800000000000000
       internalID: 4983129934719697398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_crack
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850cae80d020f2320800000000000000
+      internalID: 2535247370240311384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper_ground_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 170
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8545d8bbdb98d3530800000000000000
+      internalID: 3836373905577956440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper_ground_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 171
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81eb78648ad91fb0800000000000000
+      internalID: -4676466475824062069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper_ground_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 172
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be37106e4acc2140800000000000000
+      internalID: 4696350949408980661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_01
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 150
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d252a230e8182c0800000000000000
+      internalID: -4431104414112731768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_02
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 140
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc6bed8617d4bd00800000000000000
+      internalID: 987650710171249913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_03
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 127
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c8abcbb19f2ed40800000000000000
+      internalID: 5612321983182834720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_04
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 149
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f707111fac52823f0800000000000000
+      internalID: -925448169866563457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_05
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776d52a93b2fc7710800000000000000
+      internalID: 1692494413183702647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_06
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 127
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede8510e7a81a5fe0800000000000000
+      internalID: -1199619241442701602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_07
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 142
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d065aba3e217faf10800000000000000
+      internalID: 2283167979467855373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_08
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 127
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ad1c92d18b0e100800000000000000
+      internalID: 135310424215247441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_09
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 151
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7193a150ba53920800000000000000
+      internalID: 2969467567723845581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_ground_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 142
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7dc3dd455603090800000000000000
+      internalID: -8056828318202406996
       vertices: []
       indices: 
       edges: []
