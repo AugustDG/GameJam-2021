@@ -5908,7 +5908,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.38770056, y: 0.09713289}
+  m_Offset: {x: -0.40657997, y: 0.09713289}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5919,7 +5919,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44004917, y: 0.80583423}
+  m_Size: {x: 0.477808, y: 0.80583423}
   m_EdgeRadius: 0
 --- !u!4 &769910711
 Transform:
@@ -25200,7 +25200,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.90990794}
+  m_Offset: {x: 0, y: -0.49398112}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -25211,7 +25211,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 3.3861024}
+  m_Size: {x: 1, y: 4.217956}
   m_EdgeRadius: 0
 --- !u!114 &1505915389
 MonoBehaviour:
@@ -30487,13 +30487,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1152237845}
     m_Modifications:
-    - target: {fileID: 330981285284534248, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
-      propertyPath: m_Size.y
-      value: 0.13598633
-      objectReference: {fileID: 0}
-    - target: {fileID: 330981285284534248, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.43200684
+    - target: {fileID: 2254612833589805685, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
+      propertyPath: m_Volume
+      value: 0.042
       objectReference: {fileID: 0}
     - target: {fileID: 2723865704857551244, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
       propertyPath: m_Name
@@ -30544,21 +30540,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2723865705743129646, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
-      propertyPath: delay
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2723865705743129646, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 321255254}
-    - target: {fileID: 2723865705743129646, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
-      propertyPath: spawner
-      value: 
-      objectReference: {fileID: 1800125732}
-    - target: {fileID: 4532452579240351866, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
-      propertyPath: m_UseNormalMap
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf8b7501991aa754b8ac5d8b221981fe, type: 3}
 --- !u!4 &2723865705570284234 stripped

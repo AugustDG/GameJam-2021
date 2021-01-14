@@ -116,7 +116,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.061
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -582,7 +582,7 @@ MonoBehaviour:
   text: {fileID: 2723865704774936884}
   player: {fileID: 0}
   isPlayerWaiting: 0
-  hasBoxWaiting: 0
+  delay: 0.7
   boxCollider: {fileID: 330981285284534248}
 --- !u!1 &5264195624804813021
 GameObject:
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_LightVolumeOpacity: 0.196
   m_ApplyToSortingLayers: 53aa736d000000004ff433d5
   m_LightCookieSprite: {fileID: 21300000, guid: 0e5ef2222dfcbfc46a4aa7ae538ff7bf, type: 3}
-  m_UseNormalMap: 0
+  m_UseNormalMap: 1
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
@@ -701,7 +701,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.43200684}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -712,7 +712,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.13598633}
   m_EdgeRadius: 0
 --- !u!249 &7409544112408551180
 AreaEffector2D:
