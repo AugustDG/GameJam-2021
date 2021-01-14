@@ -17,9 +17,7 @@ public class TriggerToilet : MonoBehaviour
     private Animator _playerAnimator;
     private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
 
-    public Animator sinkAnimator;
-    public Animator toiletAnimator;
-    public Animator floorAnimator;
+    public Animator[] animators;
 
     void Start()
     {
@@ -44,9 +42,6 @@ public class TriggerToilet : MonoBehaviour
                 else
                 {
                     canvas.enabled = false;
-                    sinkAnimator.SetTrigger("Flood");
-                    toiletAnimator.SetTrigger("Flood");
-                    floorAnimator.SetTrigger("Flood");
                 }
             }
             else if (Input.GetButton("FireBad"))
@@ -60,9 +55,10 @@ public class TriggerToilet : MonoBehaviour
                 else
                 {
                     canvas.enabled = false;
-                    sinkAnimator.SetTrigger("Flood");
-                    toiletAnimator.SetTrigger("Flood");
-                    floorAnimator.SetTrigger("Flood");
+                    for (int i = 0; i < animators.Length; i++)
+                    {
+                        animators[i].SetTrigger("Flood");
+                    }
                 }
             }
             else
