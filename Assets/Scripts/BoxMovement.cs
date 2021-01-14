@@ -26,7 +26,7 @@ public class BoxMovement : MonoBehaviour
         _playerAnimator = player.GetComponent<Animator>();
     }
 
-    void Update()
+    private void Update()
     {
         if (!isDecided)
         {
@@ -57,7 +57,7 @@ public class BoxMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Vector3 targetVelocity = new Vector2(0, -boxSpeed * 10f);
         mRigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -116,7 +116,7 @@ public class BoxMovement : MonoBehaviour
         mRigidbody2D.velocity = Vector3.SmoothDamp(mRigidbody2D.velocity, targetVelocity, ref _mVelocity, mMovementSmoothing);
     }
 
-    void OnTriggerEnter2D (Collider2D other)
+    private void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.tag.Contains("Corner"))
         {

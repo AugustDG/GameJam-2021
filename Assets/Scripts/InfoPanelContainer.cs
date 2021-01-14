@@ -17,7 +17,7 @@ public class InfoPanelContainer : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) ColorblindTypeChanged(Colorblindness.Instance.currentType);
+        if (Input.GetKeyDown(KeyCode.Return)) ColorblindTypeChanged(CustomColorblindness.Instance.CurrentType);
     }
 
     public void ColorblindTypeChanged(int type)
@@ -25,27 +25,14 @@ public class InfoPanelContainer : MonoBehaviour
         StartCoroutine(DisplayInfo(type));
     }
 
-    IEnumerator DisplayInfo(int type)
+    private IEnumerator DisplayInfo(int type)
     {
         nameText.text = ((ColorblindTypesFrench) type).ToString();
         
-        transform.GetComponent<RectTransform>().DOAnchorPosY(-3.9f, 0.8f).Play();
+        transform.GetComponent<RectTransform>().DoAnchorPosY(-3.9f, 0.8f).Play();
 
         yield return new WaitForSeconds(1f);
         
-        transform.GetComponent<RectTransform>().DOAnchorPosY(-5.2f, 0.8f).Play();
+        transform.GetComponent<RectTransform>().DoAnchorPosY(-5.2f, 0.8f).Play();
     }
-}
-
-public enum ColorblindTypesFrench
-{
-    Normal,
-    Protanopie,
-    Protanomalie,
-    Deutéronome,
-    Deutéranomalie,
-    Tritanopie,
-    Tritanomalie,
-    Achromatopsie,
-    Achromatomalie,
 }

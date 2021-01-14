@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Trigger_douane : MonoBehaviour
+public class TriggerDouane : MonoBehaviour
 {
     public BoxCollider2D mur;
     public BoxCollider2D tourelle;
@@ -11,7 +11,7 @@ public class Trigger_douane : MonoBehaviour
     public GameObject actualPistol;
     public TMP_Text text;
 
-    void Update()
+    private void Update()
     {
         if (playerCollider.IsTouching(tourelle) && actualPistol.activeSelf)
         {

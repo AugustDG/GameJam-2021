@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Trigger_pistol : MonoBehaviour
+public class TriggerPistol : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
@@ -18,14 +18,14 @@ public class Trigger_pistol : MonoBehaviour
     public SpriteRenderer pistolSprite;
     public GameObject actualPistol;
 
-    void Start()
+    private void Start()
     {
         _playerCollider = player.GetComponent<BoxCollider2D>();
         _playerAnimator = player.GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
         if (boxCollider.IsTouching(_playerCollider))
@@ -49,7 +49,7 @@ public class Trigger_pistol : MonoBehaviour
             }
             else
             {
-                text.text = "Q ou E pour intéragir avec le pistolet de carburant";
+                text.text = "Q ou E pour intÃ©ragir avec le pistolet de carburant";
             }
         }
 

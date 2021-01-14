@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Trigger_camion : MonoBehaviour
+public class TriggerCamion : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
@@ -18,20 +18,20 @@ public class Trigger_camion : MonoBehaviour
 
     private Animator _playerAnimator;
 
-    public Trigger_pistol triggerPistolScript;
+    public TriggerPistol triggerPistolScript;
     public GameObject actualPistol;
-    private bool fueledUp = false;
+    private bool _fueledUp = false;
 
-    void Start()
+    private void Start()
     {
         _playerCollider = player.GetComponent<BoxCollider2D>();
         _playerAnimator = player.GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (!fueledUp)
+        if (!_fueledUp)
         {
             if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
             {
@@ -46,7 +46,7 @@ public class Trigger_camion : MonoBehaviour
                     }
                     else
                     {
-                        fueledUp = true;
+                        _fueledUp = true;
                         actualPistol.SetActive(true);
                         canvas.enabled = false;
                         _playerAnimator.SetBool("FuelingUp", false);
@@ -63,7 +63,7 @@ public class Trigger_camion : MonoBehaviour
                     }
                     else
                     {
-                        fueledUp = true;
+                        _fueledUp = true;
                         actualPistol.SetActive(true);
                         canvas.enabled = false;
                         _playerAnimator.SetBool("FuelingUp", false);

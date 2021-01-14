@@ -17,14 +17,14 @@ public class TriggerToilet : MonoBehaviour
     private Animator _playerAnimator;
     private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
 
-    void Start()
+    private void Start()
     {
         _playerCollider = player.GetComponent<BoxCollider2D>();
         _playerAnimator = player.GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
         if (boxCollider.IsTouching(_playerCollider))

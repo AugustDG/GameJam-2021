@@ -30,6 +30,7 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="BoxMovement.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
+          <e p="CustomColorblindness.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
           <e p="Follower.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />

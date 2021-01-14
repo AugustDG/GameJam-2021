@@ -11,13 +11,13 @@ public class Timer : MonoBehaviour
     private Image _image;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _image = GetComponent<Image>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (_time < timeAmount)
         {

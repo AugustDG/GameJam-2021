@@ -7,11 +7,11 @@ public class LoopConstinuously : MonoBehaviour
     public float speed = 2f;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         foreach (var trans in rectTransforms)
         {
-            trans.DOAnchorPosX(trans.anchoredPosition.x + 1f * speed * Time.deltaTime, Time.deltaTime).Play();
+            trans.DoAnchorPosX(trans.anchoredPosition.x + 1f * speed * Time.deltaTime, Time.deltaTime).Play();
 
             if (trans.anchoredPosition.x >= 1301)
             {
