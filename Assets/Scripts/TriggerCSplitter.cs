@@ -76,15 +76,5 @@ public class TriggerCSplitter : MonoBehaviour
             isPlayerWaiting = false;
             text.text = "";
         }
-        /*if (other.gameObject.CompareTag("Box"))
-        {
-            boxCollider.isTrigger = false;
-
-            _effector2D.forceAngle = 0;
-            _effector2D.forceMagnitude = 0;
-            _playerAnimator.SetBool(IsInteracting, false);
-            
-            hasBoxWaiting = false;
-        }*/
     }
 }
