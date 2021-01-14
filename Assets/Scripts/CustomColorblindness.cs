@@ -17,6 +17,19 @@ public enum ColorblindTypesFrench
     Achromatomalie,
 }
 
+public enum ColorblindTypes
+{
+    Normal = 0,
+    Protanopia,
+    Protanomaly,
+    Deuteranopia,
+    Deuteranomaly,
+    Tritanopia,
+    Tritanomaly,
+    Achromatopsia,
+    Achromatomaly,
+}
+
 public class CustomColorblindness : MonoBehaviour
 {
     public KeyCode changeKey = KeyCode.F1;
@@ -113,7 +126,7 @@ public class CustomColorblindness : MonoBehaviour
 
     private IEnumerator ApplyFilter()
     {
-        ResourceRequest loadRequest = Resources.LoadAsync<VolumeProfile>($"Colorblind/{(ColorblindTypesFrench) CurrentType}");
+        ResourceRequest loadRequest = Resources.LoadAsync<VolumeProfile>($"Colorblind/{(ColorblindTypes) CurrentType}");
 
         do yield return null;
         while (!loadRequest.isDone);
