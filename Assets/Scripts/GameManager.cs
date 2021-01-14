@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using DG.Tweening;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,7 +9,12 @@ public class GameManager : MonoBehaviour
 {
     [Tooltip("In seconds :)")] public int roundLength = 60;
 
+    public GameObject tabletUi;
+    public GameObject tabletBg;
+    public TMP_Text timerText;
+
     private int _tickPos;
+    private string _timeString;
 
     public void Awake()
     {
@@ -31,6 +38,17 @@ public class GameManager : MonoBehaviour
         Application.Quit();
 #endif
         }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(Screen.height, 2.5f);
+        }
+        else if (Input.GetKeyUp(KeyCode.Tab))
+        {
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(0, 2.5f);
+        }
+
+        timerText.text = _timeString;
     }
 
     private void ClockStartedHandler(object sender, EventArgs args)
@@ -49,15 +67,15 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(roundLength / 60f);
 
-            print($"Time since start: {_tickPos}");
+            _timeString = $"16:{_tickPos}";
 
             _tickPos++;
         }
-        
+
         yield return new WaitForSeconds(5f);
-        
+
         GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
-        
+
         print("Finished!");
     }
 }

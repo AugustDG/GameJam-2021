@@ -56,10 +56,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -117,7 +117,7 @@
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
       <workItem from="1610546337197" duration="10838000" />
-      <workItem from="1610635621069" duration="4188000" />
+      <workItem from="1610635621069" duration="5965000" />
     </task>
     <servers />
   </component>
