@@ -21,12 +21,11 @@ public class GameManager : MonoBehaviour
     {
         GameEvents.GoodScoreChanged += GoodScoreHandler;
         GameEvents.BadScoreChanged += BadScoreHandler;
-        GameEvents.ClockStarted += ClockStartedHandler;
     }
 
     public void Start()
     {
-        GameEvents.ClockStarted.Invoke(this, EventArgs.Empty);
+        StartCoroutine(ClockTick());
     }
 
     public void Update()
@@ -52,11 +51,6 @@ public class GameManager : MonoBehaviour
         timerText.text = _timeString;
     }
 
-    private void ClockStartedHandler(object sender, EventArgs args)
-    {
-        StartCoroutine(ClockTick());
-    }
-
     private void GoodScoreHandler(object sender, int gScore) => GameStats.GoodScore += gScore;
     private void BadScoreHandler(object sender, int bScore) => GameStats.BadScore += bScore;
 
@@ -75,6 +69,8 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(5f);
 
+        DOTween.KillAll();
+        
         SceneManager.LoadSceneAsync(GameStats.BadScore - GameStats.GoodScore <= 50 ? 3 : 4);
 
         print("Finished!");

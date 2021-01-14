@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using MongoDB.Driver;
 using UnityEditor;
 using UnityEngine;
@@ -32,6 +33,7 @@ public class LeaderboardManager : MonoBehaviour
 
     public void Restart()
     {
+        DOTween.KillAll();
         SceneManager.LoadSceneAsync(2);
     }
 
