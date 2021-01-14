@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TriggerCSplitter : MonoBehaviour
 {
-    public TMP_Text text;
+    public GameObject canvas;
     public GameObject player;
     public bool isPlayerWaiting;
     public float delay = 0.5f;
@@ -62,7 +62,7 @@ public class TriggerCSplitter : MonoBehaviour
         if (other.gameObject.Equals(player))
         {
             isPlayerWaiting = true;
-            text.text = "Q pour envoyer vers la gauche\nE pour envoyer vers la droite";
+            canvas.SetActive(true);
         }
         
     }
@@ -74,7 +74,7 @@ public class TriggerCSplitter : MonoBehaviour
         if (other.gameObject.Equals(player))
         {
             isPlayerWaiting = false;
-            text.text = "";
+            canvas.SetActive(false);
         }
     }
 }
