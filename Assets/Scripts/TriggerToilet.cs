@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class TriggerToilet : MonoBehaviour
 {
-    public TMP_Text text;
     public GameObject player;
     public BoxCollider2D boxCollider;
     private BoxCollider2D _playerCollider;
@@ -41,7 +40,8 @@ public class TriggerToilet : MonoBehaviour
                 }
                 else
                 {
-                    canvas.enabled = false;
+                    canvas.gameObject.SetActive(false);
+                    GameStats.GoodScore += (int)GameStats.ScoreTable.Toilet;
                 }
             }
             else if (Input.GetButton("FireBad"))
@@ -54,6 +54,7 @@ public class TriggerToilet : MonoBehaviour
                 }
                 else
                 {
+                    GameStats.BadScore += (int)GameStats.ScoreTable.Toilet;
                     canvas.enabled = false;
                     for (int i = 0; i < animators.Length; i++)
                     {
@@ -66,7 +67,7 @@ public class TriggerToilet : MonoBehaviour
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
                 _playerAnimator.SetBool(IsInteracting, false);
-                text.text = "Q pour fermer le robinet\nE pour boucher le lavabo";
+                canvas.gameObject.SetActive(true);
             }
         }
 
@@ -76,7 +77,8 @@ public class TriggerToilet : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            text.text = "";
+            canvas.gameObject.SetActive(false);
+            _playerAnimator.SetBool(IsInteracting, false);
         }
     }
 }

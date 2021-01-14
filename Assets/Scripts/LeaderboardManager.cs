@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using MongoDB.Driver;
 using UnityEditor;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class LeaderboardManager : MonoBehaviour
     [SerializeField] private GameObject containerUi;
     [SerializeField] private GameObject nameField;
     [SerializeField] private GameObject loading;
+    [SerializeField] private GameObject bg;
     [SerializeField] private LeaderboardContainer containerLocal;
 
     private List<PlayerInfo> _leaderboardPlayers = new List<PlayerInfo>();
@@ -20,18 +22,18 @@ public class LeaderboardManager : MonoBehaviour
     {
         MongoClient.Instance = new MongoClient();
 
-        GameEvents.RoundFinished += RoundFinishedHandler;
+        GameEvents.ShowLeaderboard += ShowLeaderboardHandler;
     }
 
     public void Start()
     {
-        GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
-        GetComponent<Canvas>().renderMode = RenderMode.WorldSpace;
+        GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
         GetComponent<Canvas>().worldCamera = Camera.current;
     }
 
     public void Restart()
     {
+        DOTween.KillAll();
         SceneManager.LoadSceneAsync(2);
     }
 
@@ -49,9 +51,10 @@ public class LeaderboardManager : MonoBehaviour
         GameStats.PlayerName = change;
     }
 
-    private void RoundFinishedHandler(object sender, EventArgs args)
+    private void ShowLeaderboardHandler(object sender, EventArgs args)
     {
         nameField.SetActive(true);
+        bg.SetActive(true);
         containerUi.SetActive(false);
     }
 

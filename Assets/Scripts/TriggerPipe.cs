@@ -20,9 +20,6 @@ public class TriggerPipe : MonoBehaviour
     public Animator animator;
     public BoxCollider2D triggerCollider;
 
-    public Image imageBon;
-    public Image imageMauvais;
-
     void Start()
     {
         _playerCollider = player.GetComponent<BoxCollider2D>();
@@ -37,8 +34,6 @@ public class TriggerPipe : MonoBehaviour
         {
             if (Input.GetButton("FireGood"))
             {
-                imageBon.enabled = false;
-                imageMauvais.enabled = false;
                 _playerAnimator.SetBool(IsInteracting, true);
                 if (_time < timeAmount)
                 {
@@ -47,15 +42,13 @@ public class TriggerPipe : MonoBehaviour
                 }
                 else
                 {
-                    canvas.enabled = false;
+                    canvas.gameObject.SetActive(false);
                     triggerCollider.enabled = false;
                     GameStats.GoodScore += (int)GameStats.ScoreTable.Pipes;
                 }
             }
             else if (Input.GetButton("FireBad"))
             {
-                imageBon.enabled = false;
-                imageMauvais.enabled = false;
                 _playerAnimator.SetBool(IsInteracting, true);
                 if (_time < timeAmount)
                 {
@@ -72,12 +65,10 @@ public class TriggerPipe : MonoBehaviour
             }
             else
             {
-                imageBon.enabled = true;
-                imageMauvais.enabled = true;
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
                 _playerAnimator.SetBool(IsInteracting, false);
-                canvas.enabled = true;
+                canvas.gameObject.SetActive(true);
             }
         }
 
@@ -87,7 +78,8 @@ public class TriggerPipe : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            canvas.enabled = false;
+            canvas.gameObject.SetActive(false);
+            _playerAnimator.SetBool(IsInteracting, false);
         }
     }
 }

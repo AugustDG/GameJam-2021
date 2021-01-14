@@ -4,6 +4,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,12 +21,11 @@ public class GameManager : MonoBehaviour
     {
         GameEvents.GoodScoreChanged += GoodScoreHandler;
         GameEvents.BadScoreChanged += BadScoreHandler;
-        GameEvents.ClockStarted += ClockStartedHandler;
     }
 
     public void Start()
     {
-        GameEvents.ClockStarted.Invoke(this, EventArgs.Empty);
+        StartCoroutine(ClockTick());
     }
 
     public void Update()
@@ -41,19 +41,14 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(Screen.height, 2.5f).Play();
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(0, 0.5f).Play();
         }
         else if (Input.GetKeyUp(KeyCode.Tab))
         {
-            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(0, 2.5f).Play();
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(Screen.height, 0.5f).Play();
         }
 
         timerText.text = _timeString;
-    }
-
-    private void ClockStartedHandler(object sender, EventArgs args)
-    {
-        StartCoroutine(ClockTick());
     }
 
     private void GoodScoreHandler(object sender, int gScore) => GameStats.GoodScore += gScore;
@@ -74,7 +69,9 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(5f);
 
-        GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
+        DOTween.KillAll();
+        
+        SceneManager.LoadSceneAsync(GameStats.BadScore - GameStats.GoodScore <= 50 ? 3 : 4);
 
         print("Finished!");
     }

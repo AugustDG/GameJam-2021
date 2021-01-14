@@ -4,14 +4,13 @@ using UnityEngine.UI;
 
 public class TriggerCamion : MonoBehaviour
 {
-    public TMP_Text text;
+    public GameObject canvas;
     public GameObject player;
     public BoxCollider2D boxCollider;
     private BoxCollider2D _playerCollider;
 
     public float timeAmount = 10f;
     public Image image;
-    public Canvas canvas;
     private float _time;
 
     private Animator _playerAnimator;
@@ -33,7 +32,6 @@ public class TriggerCamion : MonoBehaviour
         {
             if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
             {
-                Debug.Log("We're in");
                 if (Input.GetButton("FireGood"))
                 {
                     _playerAnimator.SetBool("FuelingUp", true);
@@ -45,9 +43,10 @@ public class TriggerCamion : MonoBehaviour
                     }
                     else
                     {
+                        GameStats.GoodScore += (int)GameStats.ScoreTable.Fuel;
                         _fueledUp = true;
                         actualPistol.SetActive(true);
-                        canvas.enabled = false;
+                        canvas.SetActive(false);
                         _playerAnimator.SetBool("FuelingUp", false);
                     }
                 }
@@ -62,9 +61,10 @@ public class TriggerCamion : MonoBehaviour
                     }
                     else
                     {
+                        GameStats.BadScore += (int)GameStats.ScoreTable.Fuel;
                         _fueledUp = true;
                         actualPistol.SetActive(true);
-                        canvas.enabled = false;
+                        canvas.SetActive(false);
                         _playerAnimator.SetBool("FuelingUp", false);
                     }
                 }
@@ -74,18 +74,14 @@ public class TriggerCamion : MonoBehaviour
                     _time = 0f;
                     image.fillAmount = _time / timeAmount;
                     _playerAnimator.SetBool("FuelingUp", false);
-                    text.text = "Q pour faire le plein\nE pour verser de l'essence par terre";
+                    canvas.SetActive(true);
                 }
-            }
-            else if (boxCollider.IsTouching(_playerCollider))
-            {
-                text.text = "Il vous manque le pistolet de carburant!";
             }
             else if (!boxCollider.IsTouching(_playerCollider))
             {
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
-                text.text = "";
+                canvas.SetActive(false);
             }
         }
     }
@@ -94,7 +90,7 @@ public class TriggerCamion : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            text.text = "";
+            canvas.SetActive(false);
         }
     }
 }

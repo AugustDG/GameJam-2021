@@ -61,6 +61,7 @@
           <e p="TriggerPistol.cs" t="Include" />
           <e p="TriggerToilet.cs" t="Include" />
           <e p="Utility" t="Include">
+            <e p="CutsceneEnd.cs" t="Include" />
             <e p="DontDestroy.cs" t="Include" />
             <e p="FadeOff.cs" t="Include" />
             <e p="LeaderboardContainer.cs" t="Include" />
