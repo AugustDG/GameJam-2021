@@ -41,7 +41,7 @@ public class TriggerToilet : MonoBehaviour
                 else
                 {
                     canvas.gameObject.SetActive(false);
-                    GameStats.GoodScore += (int)GameStats.ScoreTable.Pipes;
+                    GameStats.GoodScore += (int)GameStats.ScoreTable.Toilet;
                 }
             }
             else if (Input.GetButton("FireBad"))
@@ -54,11 +54,11 @@ public class TriggerToilet : MonoBehaviour
                 }
                 else
                 {
+                    GameStats.BadScore += (int)GameStats.ScoreTable.Toilet;
                     canvas.enabled = false;
                     for (int i = 0; i < animators.Length; i++)
                     {
                         animators[i].SetTrigger("Flood");
-                        GameStats.BadScore += (int)GameStats.ScoreTable.Pipes;
                     }
                 }
             }
