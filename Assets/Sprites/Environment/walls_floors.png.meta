@@ -161,6 +161,15 @@ TextureImporter:
   - first:
       213: 252782678977679825
     second: walls_floors_52
+  - first:
+      213: 7349603179055605532
+    second: walls_floors_53
+  - first:
+      213: 1094981001259839901
+    second: walls_floors_54
+  - first:
+      213: -7399890148998977735
+    second: walls_floors_55
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1372,8 +1381,8 @@ TextureImporter:
       name: walls_floors_51
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 96
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -1393,7 +1402,7 @@ TextureImporter:
       name: walls_floors_52
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 0
         width: 16
         height: 16
@@ -1406,6 +1415,69 @@ TextureImporter:
       bones: []
       spriteID: 1d116d9d180128300800000000000000
       internalID: 252782678977679825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls_floors_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17e0b7c6290ff560800000000000000
+      internalID: 7349603179055605532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls_floors_54
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91f4ef4b67223f00800000000000000
+      internalID: 1094981001259839901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls_floors_55
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937e004ad1f4e4990800000000000000
+      internalID: -7399890148998977735
       vertices: []
       indices: 
       edges: []
