@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
+﻿using System.Collections;
 using DG.Tweening;
-using SOHNE.Accessibility.Colorblindness;
 using TMPro;
 using UnityEngine;
 

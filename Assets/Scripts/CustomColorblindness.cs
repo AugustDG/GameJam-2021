@@ -1,11 +1,8 @@
 ﻿using System.Collections;
 using System.Linq;
-using SOHNE.Accessibility.Colorblindness;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 public enum ColorblindTypesFrench
 {
@@ -66,7 +63,7 @@ public class CustomColorblindness : MonoBehaviour
             return;
         }
 
-        _maxType = (int) System.Enum.GetValues(typeof(ColorblindTypes)).Cast<ColorblindTypes>().Last();
+        _maxType = (int) System.Enum.GetValues(typeof(ColorblindTypesFrench)).Cast<ColorblindTypesFrench>().Last();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -116,7 +113,7 @@ public class CustomColorblindness : MonoBehaviour
 
     private IEnumerator ApplyFilter()
     {
-        ResourceRequest loadRequest = Resources.LoadAsync<VolumeProfile>($"Colorblind/{(ColorblindTypes) CurrentType}");
+        ResourceRequest loadRequest = Resources.LoadAsync<VolumeProfile>($"Colorblind/{(ColorblindTypesFrench) CurrentType}");
 
         do yield return null;
         while (!loadRequest.isDone);

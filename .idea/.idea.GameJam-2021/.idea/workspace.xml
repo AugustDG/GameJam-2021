@@ -16,7 +16,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://F:/Projects/Dev/Unity/GameJam-2021/Assets/Scripts/BoxMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Section1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -48,7 +47,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_toilet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerPipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ColorAccessibility.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/ColorAccessibilityShader.shader" />
@@ -58,9 +56,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" />
       </list>
     </option>
   </component>
