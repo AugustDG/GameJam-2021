@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Spawner : MonoBehaviour
 {
     public GameObject boxPrefab;
+    public AudioClip audioClip;
     public int boxesPerWave = 10;
     public float timeBetweenWaves = 15;
     public float timeBetweenBoxes = 1f;
@@ -43,6 +45,6 @@ public class Spawner : MonoBehaviour
 
     void Siren()
     {
-
+        GetComponent<AudioSource>().PlayOneShot(audioClip, 0.5f);
     }
 }
