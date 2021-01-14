@@ -32168,12 +32168,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -1080
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2876585917471199733, guid: d992008d2046daa42997afb95f89add0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -540
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 2876585918450755314, guid: d992008d2046daa42997afb95f89add0, type: 3}
       propertyPath: m_Pivot.x

@@ -41,11 +41,11 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(Screen.height, 2.5f).Play();
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(0, 0.5f).Play();
         }
         else if (Input.GetKeyUp(KeyCode.Tab))
         {
-            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(0, 2.5f).Play();
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(Screen.height, 0.5f).Play();
         }
 
         timerText.text = _timeString;
