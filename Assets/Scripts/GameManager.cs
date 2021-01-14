@@ -4,6 +4,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -74,7 +75,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(5f);
 
-        GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
+        SceneManager.LoadSceneAsync(GameStats.BadScore - GameStats.GoodScore <= 50 ? 3 : 4);
 
         print("Finished!");
     }
