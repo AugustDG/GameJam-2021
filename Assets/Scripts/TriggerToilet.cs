@@ -18,9 +18,12 @@ public class TriggerToilet : MonoBehaviour
     private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     public Animator sinkAnimator;
