@@ -33,6 +33,7 @@ public class TriggerCamion : MonoBehaviour
         {
             if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
             {
+                Debug.Log("We're in");
                 if (Input.GetButton("FireGood"))
                 {
                     _playerAnimator.SetBool("FuelingUp", true);
@@ -84,6 +85,7 @@ public class TriggerCamion : MonoBehaviour
             {
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
+                text.text = "";
             }
         }
     }
