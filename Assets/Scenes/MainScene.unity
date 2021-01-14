@@ -27303,7 +27303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxPrefab: {fileID: 2813111550280064203, guid: bfdd864a1c5002544991e7cd00c31ad7, type: 3}
   boxesPerWave: 5
-  timeBetweenWaves: 15
+  timeBetweenWaves: 25
   timeBetweenBoxes: 1
   timeBeforeFirst: 2
   boxesLeft: 0
