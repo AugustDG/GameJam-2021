@@ -62,10 +62,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CutsceneEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +123,7 @@
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
       <workItem from="1610546337197" duration="10838000" />
-      <workItem from="1610635621069" duration="11187000" />
+      <workItem from="1610635621069" duration="11790000" />
     </task>
     <servers />
   </component>

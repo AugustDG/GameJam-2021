@@ -39342,7 +39342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxPrefab: {fileID: 2813111550280064203, guid: bfdd864a1c5002544991e7cd00c31ad7, type: 3}
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 728580e9f9de7594c9e38cf10857bd06, type: 3}
   boxesPerWave: 5
   timeBetweenWaves: 25
   timeBetweenBoxes: 1
