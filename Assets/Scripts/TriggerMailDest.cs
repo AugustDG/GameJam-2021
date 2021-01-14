@@ -30,6 +30,7 @@ public class TriggerMailDest : MonoBehaviour
         {
             if (Input.GetButton("FireGood"))
             {
+                GameStats.GoodScore += (int)GameStats.ScoreTable.Mail;
                 lettres.SetActive(false);
                 canvas.enabled = false;
                 Vector3 newPos = new Vector3(-9.97f, -5.22f, 0f);
@@ -44,6 +45,7 @@ public class TriggerMailDest : MonoBehaviour
             }
             else if (Input.GetButton("FireBad"))
             {
+                GameStats.BadScore += (int)GameStats.ScoreTable.Mail;
                 lettres.SetActive(false);
                 canvas.enabled = false;
                 poubelleRenderer.sprite = poubellePleine;

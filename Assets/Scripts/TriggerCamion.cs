@@ -33,7 +33,6 @@ public class TriggerCamion : MonoBehaviour
         {
             if (boxCollider.IsTouching(_playerCollider) && triggerPistolScript.pistolPickedUp)
             {
-                Debug.Log("We're in");
                 if (Input.GetButton("FireGood"))
                 {
                     _playerAnimator.SetBool("FuelingUp", true);
@@ -45,6 +44,7 @@ public class TriggerCamion : MonoBehaviour
                     }
                     else
                     {
+                        GameStats.GoodScore += (int)GameStats.ScoreTable.Fuel;
                         _fueledUp = true;
                         actualPistol.SetActive(true);
                         canvas.enabled = false;
@@ -62,6 +62,7 @@ public class TriggerCamion : MonoBehaviour
                     }
                     else
                     {
+                        GameStats.BadScore += (int)GameStats.ScoreTable.Fuel;
                         _fueledUp = true;
                         actualPistol.SetActive(true);
                         canvas.enabled = false;
