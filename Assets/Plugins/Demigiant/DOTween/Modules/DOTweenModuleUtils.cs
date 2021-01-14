@@ -23,7 +23,7 @@ namespace DG.Tweening
     /// - DOTWEEN_TMP ► TextMesh Pro
     /// - DOTWEEN_TK2D ► 2D Toolkit
     /// </summary>
-	public static class DOTweenModuleUtils
+	public static class DoTweenModuleUtils
     {
         static bool _initialized;
 
@@ -126,7 +126,7 @@ namespace DG.Tweening
 #if UNITY_2018_1_OR_NEWER
             [UnityEngine.Scripting.Preserve]
 #endif
-            public static TweenerCore<Vector3, Path, PathOptions> CreateDOTweenPathTween(
+            public static TweenerCore<Vector3, Path, PathOptions> CreateDoTweenPathTween(
                 MonoBehaviour target, bool tweenRigidbody, bool isLocal, Path path, float duration, PathMode pathMode
             ){
                 TweenerCore<Vector3, Path, PathOptions> t;
@@ -134,8 +134,8 @@ namespace DG.Tweening
                 Rigidbody rBody = tweenRigidbody ? target.GetComponent<Rigidbody>() : null;
                 if (tweenRigidbody && rBody != null) {
                     t = isLocal
-                        ? rBody.DOLocalPath(path, duration, pathMode)
-                        : rBody.DOPath(path, duration, pathMode);
+                        ? rBody.DoLocalPath(path, duration, pathMode)
+                        : rBody.DoPath(path, duration, pathMode);
                 } else {
                     t = isLocal
                         ? target.transform.DOLocalPath(path, duration, pathMode)

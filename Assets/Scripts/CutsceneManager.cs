@@ -29,8 +29,8 @@ public class CutsceneManager : MonoBehaviour
         DOTween.To(() => _mainVirtualCam.m_Lens.OrthographicSize, x => _mainVirtualCam.m_Lens.OrthographicSize = x, 2f,
             2).OnComplete(()=> StartCoroutine(CycleCutscene(dial)));
 
-        upTransform.DOAnchorPosY(upTransform.anchoredPosition.y - 50, 2f, true);
-        downTransform.DOAnchorPosY(downTransform.anchoredPosition.y + 50, 2f, true);
+        upTransform.DoAnchorPosY(upTransform.anchoredPosition.y - 50, 2f, true);
+        downTransform.DoAnchorPosY(downTransform.anchoredPosition.y + 50, 2f, true);
 
         DOTween.PlayAll();
     }

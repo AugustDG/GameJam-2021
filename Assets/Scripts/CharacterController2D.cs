@@ -12,7 +12,7 @@ public class CharacterController2D : MonoBehaviour
     private static readonly int Direction = Animator.StringToHash("Direction");
 
     public int derniereDir = 0;
-    public Trigger_pistol triggerPistolScript;
+    public GameObject actualPistol;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class CharacterController2D : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetButton("Up"))
         {
@@ -65,8 +65,6 @@ public class CharacterController2D : MonoBehaviour
                     direction = 7;
                     break;
             }
-            if (derniereDir == 1) derniereDir = 5;
-            if (derniereDir == 3) derniereDir = 7;
         }
         if (Input.GetButtonUp("Up"))
         {
@@ -90,12 +88,12 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Vector3 targetVelocity = new Vector2(0, 0);
         
         _animator.SetInteger(Direction, direction);
-        if (triggerPistolScript.pistolPickedUp)
+        if (actualPistol.activeSelf)
             _animator.SetInteger(Direction, derniereDir);
 
         switch (direction)

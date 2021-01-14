@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Section1 : MonoBehaviour
@@ -9,7 +7,7 @@ public class Section1 : MonoBehaviour
     public Collider2D[] colliders;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }

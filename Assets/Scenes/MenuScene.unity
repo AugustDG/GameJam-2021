@@ -7009,8 +7009,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526464171}
-  - component: {fileID: 1526464170}
   - component: {fileID: 1526464169}
+  - component: {fileID: 1526464170}
   m_Layer: 9
   m_Name: Volume
   m_TagString: Untagged
@@ -7044,24 +7044,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1526464168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcdee695cf57f3545af7d3a3c6663677, type: 3}
+  m_Script: {fileID: 11500000, guid: 32136a3f5ee24e568af9a3b8b7af0811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColorblindTypeChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2041127641}
-        m_TargetAssemblyTypeName: InfoPanelContainer, Assembly-CSharp
-        m_MethodName: ColorblindTypeChangedHandler
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   changeKey: 13
 --- !u!4 &1526464171
 Transform:

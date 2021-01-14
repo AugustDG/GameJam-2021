@@ -30,7 +30,9 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="BoxMovement.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
+          <e p="CustomColorblindness.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
+          <e p="Follower.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="InfoPanelContainer.cs" t="Include" />
           <e p="LeaderboardManager.cs" t="Include" />
@@ -45,6 +47,7 @@
           <e p="Section1.cs" t="Include" />
           <e p="timer.cs" t="Include" />
           <e p="Trigger_camion.cs" t="Include" />
+          <e p="Trigger_douane.cs" t="Include" />
           <e p="Trigger_pistol.cs" t="Include" />
           <e p="TriggerCSplitter.cs" t="Include" />
           <e p="TriggerPipe.cs" t="Include" />
