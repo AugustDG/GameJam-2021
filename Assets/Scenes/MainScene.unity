@@ -30370,7 +30370,15 @@ PrefabInstance:
       propertyPath: m_PointLightOuterRadius
       value: 1.92
       objectReference: {fileID: 0}
+    - target: {fileID: 3063997929732834560, guid: 93737640bfe6e3943807346ad39f6058, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3063997930257262773, guid: 93737640bfe6e3943807346ad39f6058, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741740001155492942, guid: 93737640bfe6e3943807346ad39f6058, type: 3}
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
