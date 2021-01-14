@@ -8,17 +8,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://F:/Projects/Dev/Unity/GameJam-2021/Assets/Scripts/BoxMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E272CAB7-0219-4EF8-AB5F-B5D9D0D4C417/74/d881752e/ColorblindTypes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/e9/279c7413/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/RotateContinusously.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/Projects/Dev/Unity/GameJam-2021/Assets/Scripts/BoxMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Section1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -26,20 +24,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Testing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C#/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/RotateContinusously.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoopConstinuously.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ListContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
@@ -59,8 +53,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" />
       </list>
     </option>
   </component>
@@ -118,6 +117,7 @@
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
       <workItem from="1610546337197" duration="10838000" />
+      <workItem from="1610635621069" duration="4188000" />
     </task>
     <servers />
   </component>
@@ -202,9 +202,9 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state x="92" y="132" width="3256" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.40.3440.1400@0.40.3440.1400" timestamp="1610557459232" />
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610595551455">
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610638794283">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610595551455" />
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610638794283" />
   </component>
 </project>

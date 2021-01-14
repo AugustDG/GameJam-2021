@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -18,6 +19,18 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         GameEvents.ClockStarted.Invoke(this, EventArgs.Empty);
+    }
+
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+#if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+#else
+        Application.Quit();
+#endif
+        }
     }
 
     private void ClockStartedHandler(object sender, EventArgs args)
@@ -40,7 +53,11 @@ public class GameManager : MonoBehaviour
 
             _tickPos++;
         }
-
+        
+        yield return new WaitForSeconds(5f);
+        
+        GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
+        
         print("Finished!");
     }
 }

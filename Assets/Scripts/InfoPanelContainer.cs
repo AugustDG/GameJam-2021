@@ -21,10 +21,10 @@ public class InfoPanelContainer : MonoBehaviour
     {
         nameText.text = ((ColorblindTypesFrench) type).ToString();
         
-        transform.GetComponent<RectTransform>().DoAnchorPosY(-3.9f, 0.8f).Play();
+        transform.GetComponent<RectTransform>().DoAnchorPosY(-4.9f, 0.8f).Play();
 
         yield return new WaitForSeconds(1f);
         
-        transform.GetComponent<RectTransform>().DoAnchorPosY(-5.2f, 0.8f).Play();
+        transform.GetComponent<RectTransform>().DoAnchorPosY(-6.2f, 0.8f).Play();
     }
 }

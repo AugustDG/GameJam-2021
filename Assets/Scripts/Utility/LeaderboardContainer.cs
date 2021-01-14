@@ -7,4 +7,5 @@ public class LeaderboardContainer : MonoBehaviour
     
     public TMP_Text goodScore;
     public TMP_Text badScore;
+    public TMP_Text totalScore;
 }

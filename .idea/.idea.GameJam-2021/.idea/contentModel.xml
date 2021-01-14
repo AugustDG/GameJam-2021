@@ -28,12 +28,13 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
-          <e p="BoxMovement.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CustomColorblindness.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
+          <e p="Eater.cs" t="Include" />
           <e p="Follower.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Info.cs" t="Include" />
           <e p="InfoPanelContainer.cs" t="Include" />
           <e p="LeaderboardManager.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
@@ -44,16 +45,22 @@
             <e p="Mongo.cs" t="Include" />
             <e p="PlayerInfo.cs" t="Include" />
           </e>
-          <e p="Section1.cs" t="Include" />
+          <e p="SectionAnimation.cs" t="Include" />
+          <e p="Spawner.cs" t="Include" />
+          <e p="SplitterAnimation.cs" t="Include" />
           <e p="timer.cs" t="Include" />
-          <e p="Trigger_camion.cs" t="Include" />
-          <e p="Trigger_douane.cs" t="Include" />
-          <e p="Trigger_pistol.cs" t="Include" />
+          <e p="TriggerCamion.cs" t="Include" />
           <e p="TriggerCSplitter.cs" t="Include" />
+          <e p="TriggerDouane.cs" t="Include" />
+          <e p="TriggerLetters.cs" t="Include" />
+          <e p="TriggerMailDest.cs" t="Include" />
           <e p="TriggerPipe.cs" t="Include" />
+          <e p="TriggerPistol.cs" t="Include" />
           <e p="TriggerToilet.cs" t="Include" />
           <e p="Utility" t="Include">
+            <e p="DontDestroy.cs" t="Include" />
             <e p="LeaderboardContainer.cs" t="Include" />
+            <e p="LoadDamnIt.cs" t="Include" />
             <e p="LoopConstinuously.cs" t="Include" />
             <e p="PlaySound.cs" t="Include" />
             <e p="RotateContinusously.cs" t="Include" />

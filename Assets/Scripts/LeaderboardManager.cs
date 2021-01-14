@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using MongoDB.Driver;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LeaderboardManager : MonoBehaviour
 {
-    public Canvas endScreenCanvas;
-
     [SerializeField] private GameObject containerParent;
     [SerializeField] private GameObject containerToSpawn;
+    [SerializeField] private GameObject containerUi;
+    [SerializeField] private GameObject nameField;
+    [SerializeField] private GameObject loading;
+    [SerializeField] private LeaderboardContainer containerLocal;
 
     private List<PlayerInfo> _leaderboardPlayers = new List<PlayerInfo>();
 
@@ -24,15 +28,54 @@ public class LeaderboardManager : MonoBehaviour
         GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
     }
 
-    private async void RoundFinishedHandler(object sender, EventArgs args)
+    public void Restart()
     {
-        //endScreenCanvas.enabled = true;
+        SceneManager.LoadSceneAsync(1);
+    }
 
-        //await MongoClient.Instance.DataCollection.InsertOneAsync(new PlayerInfo(GameStats.PlayerName, GameStats.GoodScore, GameStats.BadScore));
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        EditorApplication.ExitPlaymode();
+#else
+        Application.Quit();
+#endif
+    }
+
+    public void FieldChanged(string change)
+    {
+        GameStats.PlayerName = change;
+    }
+    
+    private void RoundFinishedHandler(object sender, EventArgs args)
+    {
+        nameField.SetActive(true);
+        containerUi.SetActive(false);
+    }
+
+    public async void ShowLeaderboard()
+    {
+        nameField.SetActive(false);
+        containerUi.SetActive(true);
+        loading.SetActive(true);
+        
+        containerLocal.playerName.text = GameStats.PlayerName;
+        containerLocal.goodScore.text = GameStats.GoodScore.ToString();
+        containerLocal.badScore.text = GameStats.BadScore.ToString();
+        
+        var totalLocal = GameStats.BadScore - GameStats.GoodScore;
+        
+        containerLocal.totalScore.text =totalLocal.ToString();
+
+        var infoToSend = new PlayerInfo(GameStats.PlayerName, GameStats.GoodScore, GameStats.BadScore);
+        
+        //await MongoClient.Instance.DataCollection.InsertOneAsync(infoToSend);
 
         _leaderboardPlayers = await MongoClient.Instance.DataCollection
-            .Find(info => info.GoodScore > 0 && info.BadScore > 0).ToListAsync();
+            .Find(info => info.GoodScore > 0 && info.BadScore > 0 && info.id != infoToSend.id).ToListAsync();
 
+        loading.SetActive(false);
+        
         var iteration = 0;
 
         foreach (var playerInfo in _leaderboardPlayers)
@@ -41,11 +84,15 @@ public class LeaderboardManager : MonoBehaviour
                 containerToSpawn.transform.position, Quaternion.identity,
                 containerParent.transform);
 
-            currGo.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 270 - 200 * iteration);
+            currGo.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 220 - 320 * iteration);
 
             currGo.GetComponent<LeaderboardContainer>().playerName.text = playerInfo.Name;
             currGo.GetComponent<LeaderboardContainer>().goodScore.text = playerInfo.GoodScore.ToString();
             currGo.GetComponent<LeaderboardContainer>().badScore.text = playerInfo.BadScore.ToString();
+
+            var total = playerInfo.BadScore - playerInfo.GoodScore;
+
+            currGo.GetComponent<LeaderboardContainer>().totalScore.text = total.ToString();
 
             iteration++;
         }

@@ -330,8 +330,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: QUIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
-  m_sharedMaterial: {fileID: 2947310121108995066, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
+  m_sharedMaterial: {fileID: 6681646098661682264, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -355,12 +355,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
+  m_fontSize: 40
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 65
+  m_fontSizeMax: 40
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -921,8 +921,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Normal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
-  m_sharedMaterial: {fileID: 2947310121108995066, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
+  m_sharedMaterial: {fileID: 6681646098661682264, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -946,12 +946,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 40
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 55
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1934,10 +1934,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Appuyez sur <i>Entr\xE9e</i> pour faire d\xE9filer les options de dyschromatopsie!"
+  m_text: "Appuyez sur <i>Entr\xE9e</i>  pour faire d\xE9filer les options de dyschromatopsie!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
-  m_sharedMaterial: {fileID: 2947310121108995066, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
+  m_sharedMaterial: {fileID: 6681646098661682264, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1961,15 +1961,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.95
+  m_fontSize: 30.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 50
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2070,8 +2070,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
+  m_sharedMaterial: {fileID: 6681646098661682264, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7191,8 +7191,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: START
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
-  m_sharedMaterial: {fileID: 2947310121108995066, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
+  m_sharedMaterial: {fileID: 6681646098661682264, guid: 9a7ab288220eee44bae30acfe09391bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7216,12 +7216,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
+  m_fontSize: 40
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 65
+  m_fontSizeMax: 40
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
