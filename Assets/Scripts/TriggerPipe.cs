@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class TriggerPipe : MonoBehaviour
 {
  
-    public TMP_Text text;
     public GameObject player;
     public BoxCollider2D boxCollider;
     private BoxCollider2D _playerCollider;
@@ -19,6 +18,7 @@ public class TriggerPipe : MonoBehaviour
     private static readonly int IsInteracting = Animator.StringToHash("IsInteracting");
 
     public Animator animator;
+    public BoxCollider2D triggerCollider;
 
     void Start()
     {
@@ -43,6 +43,7 @@ public class TriggerPipe : MonoBehaviour
                 else
                 {
                     canvas.enabled = false;
+                    triggerCollider.enabled = false;
                     GameStats.GoodScore += (int)GameStats.ScoreTable.Pipes;
                 }
             }
@@ -57,6 +58,7 @@ public class TriggerPipe : MonoBehaviour
                 else
                 {
                     canvas.enabled = false;
+                    triggerCollider.enabled = false;
                     animator.SetTrigger("IsBroken");
                     GameStats.BadScore += (int)GameStats.ScoreTable.Pipes;
                 }
@@ -66,7 +68,7 @@ public class TriggerPipe : MonoBehaviour
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
                 _playerAnimator.SetBool(IsInteracting, false);
-                text.text = "Q pour serrer le tuyau\nE pour dévisser";
+                canvas.enabled = true;
             }
         }
 
@@ -76,7 +78,7 @@ public class TriggerPipe : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            text.text = "";
+            canvas.enabled = false;
         }
     }
 }
