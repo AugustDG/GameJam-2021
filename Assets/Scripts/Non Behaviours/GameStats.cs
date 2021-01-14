@@ -15,4 +15,11 @@ public static class GameStats
     
     public static int GoodScore;
     public static int BadScore;
+
+    public enum ScoreTable {
+        Box = 10,
+        Toilet = 25,
+        Pipes = 15,
+        Fuel = 50
+    }
 }
