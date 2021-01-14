@@ -26,6 +26,8 @@ public class LeaderboardManager : MonoBehaviour
     public void Start()
     {
         GameEvents.RoundFinished.Invoke(this, EventArgs.Empty);
+        GetComponent<Canvas>().renderMode = RenderMode.WorldSpace;
+        GetComponent<Canvas>().worldCamera = Camera.current;
     }
 
     public void Restart()
