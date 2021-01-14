@@ -31,12 +31,14 @@
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CustomColorblindness.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
+          <e p="CutsceneScene.cs" t="Include" />
           <e p="Eater.cs" t="Include" />
           <e p="Follower.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Info.cs" t="Include" />
           <e p="InfoPanelContainer.cs" t="Include" />
           <e p="LeaderboardManager.cs" t="Include" />
+          <e p="LogoPicker.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
           <e p="Non Behaviours" t="Include">
             <e p="GameEvents.cs" t="Include" />
@@ -48,6 +50,7 @@
           <e p="SectionAnimation.cs" t="Include" />
           <e p="Spawner.cs" t="Include" />
           <e p="SplitterAnimation.cs" t="Include" />
+          <e p="SpritePicker.cs" t="Include" />
           <e p="timer.cs" t="Include" />
           <e p="TriggerCamion.cs" t="Include" />
           <e p="TriggerCSplitter.cs" t="Include" />
@@ -59,6 +62,7 @@
           <e p="TriggerToilet.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="DontDestroy.cs" t="Include" />
+            <e p="FadeOff.cs" t="Include" />
             <e p="LeaderboardContainer.cs" t="Include" />
             <e p="LoadDamnIt.cs" t="Include" />
             <e p="LoopConstinuously.cs" t="Include" />

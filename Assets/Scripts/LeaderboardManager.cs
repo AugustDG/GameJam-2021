@@ -32,7 +32,7 @@ public class LeaderboardManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2);
     }
 
     public void Quit()
@@ -48,7 +48,7 @@ public class LeaderboardManager : MonoBehaviour
     {
         GameStats.PlayerName = change;
     }
-    
+
     private void RoundFinishedHandler(object sender, EventArgs args)
     {
         nameField.SetActive(true);
@@ -60,24 +60,24 @@ public class LeaderboardManager : MonoBehaviour
         nameField.SetActive(false);
         containerUi.SetActive(true);
         loading.SetActive(true);
-        
+
         containerLocal.playerName.text = GameStats.PlayerName;
         containerLocal.goodScore.text = GameStats.GoodScore.ToString();
         containerLocal.badScore.text = GameStats.BadScore.ToString();
-        
+
         var totalLocal = GameStats.BadScore - GameStats.GoodScore;
-        
-        containerLocal.totalScore.text =totalLocal.ToString();
+
+        containerLocal.totalScore.text = totalLocal.ToString();
 
         var infoToSend = new PlayerInfo(GameStats.PlayerName, GameStats.GoodScore, GameStats.BadScore);
-        
+
         //await MongoClient.Instance.DataCollection.InsertOneAsync(infoToSend);
 
         _leaderboardPlayers = await MongoClient.Instance.DataCollection
             .Find(info => info.GoodScore > 0 && info.BadScore > 0 && info.id != infoToSend.id).ToListAsync();
 
         loading.SetActive(false);
-        
+
         var iteration = 0;
 
         foreach (var playerInfo in _leaderboardPlayers)

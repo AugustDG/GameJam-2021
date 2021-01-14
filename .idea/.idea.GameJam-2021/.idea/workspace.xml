@@ -17,6 +17,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FadeOff.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -58,8 +59,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/FadeOff.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
       </list>
     </option>
   </component>
@@ -117,7 +120,7 @@
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
       <workItem from="1610546337197" duration="10838000" />
-      <workItem from="1610635621069" duration="5965000" />
+      <workItem from="1610635621069" duration="8599000" />
     </task>
     <servers />
   </component>
