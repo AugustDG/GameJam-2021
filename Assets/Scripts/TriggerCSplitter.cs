@@ -46,8 +46,6 @@ public class TriggerCSplitter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print(other.gameObject.name + " " + other.gameObject.tag);
-        
         if (other.gameObject.Equals(player))
         {
             isPlayerWaiting = true;

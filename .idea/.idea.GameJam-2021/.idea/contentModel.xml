@@ -32,6 +32,7 @@
           <e p="CharacterController2D.cs" t="Include" />
           <e p="CutsceneManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="InfoPanelContainer.cs" t="Include" />
           <e p="LeaderboardManager.cs" t="Include" />
           <e p="MainMenuManager.cs" t="Include" />
           <e p="Non Behaviours" t="Include">
@@ -41,7 +42,10 @@
             <e p="Mongo.cs" t="Include" />
             <e p="PlayerInfo.cs" t="Include" />
           </e>
+          <e p="Section1.cs" t="Include" />
           <e p="timer.cs" t="Include" />
+          <e p="Trigger_camion.cs" t="Include" />
+          <e p="Trigger_pistol.cs" t="Include" />
           <e p="TriggerCSplitter.cs" t="Include" />
           <e p="TriggerPipe.cs" t="Include" />
           <e p="TriggerToilet.cs" t="Include" />
