@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class TriggerPistol : MonoBehaviour
+public class Trigger_pistol : MonoBehaviour
 {
     public TMP_Text text;
     public GameObject player;
