@@ -18,7 +18,6 @@ public class SectionAnimation : MonoBehaviour
         filter.SetLayerMask(mask);
         int nb = GetComponent<BoxCollider2D>().OverlapCollider(filter, new Collider2D[50]);
         if (nb == 0) isActivated = false;
-        if (Input.GetKey(KeyCode.Escape)) Application.Quit();
     }
     
     private void OnTriggerStay2D (Collider2D other)
