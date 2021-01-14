@@ -62,9 +62,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CutsceneEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
       </list>
     </option>
   </component>
@@ -122,7 +123,7 @@
       <updated>1610492211265</updated>
       <workItem from="1610492224930" duration="20510000" />
       <workItem from="1610546337197" duration="10838000" />
-      <workItem from="1610635621069" duration="10755000" />
+      <workItem from="1610635621069" duration="11187000" />
     </task>
     <servers />
   </component>
@@ -211,10 +212,10 @@
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
     <state x="1659" y="498" width="678" height="534" key="find.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610647455323" />
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610647419563">
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup" timestamp="1610647590512">
       <screen x="0" y="40" width="3440" height="1400" />
     </state>
-    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610647419563" />
+    <state x="1383" y="355" width="672" height="678" key="search.everywhere.popup/0.40.3440.1400@0.40.3440.1400" timestamp="1610647590512" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

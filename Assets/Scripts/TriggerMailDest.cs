@@ -4,13 +4,11 @@ using UnityEngine.UI;
 
 public class TriggerMailDest : MonoBehaviour
 {
-    public TMP_Text text;
+    public GameObject canvas;
     public GameObject player;
     public BoxCollider2D boxCollider;
     public BoxCollider2D colliderLettresAutres;
     private BoxCollider2D _playerCollider;
-
-    public Canvas canvas;
 
     public GameObject lettres;
     public GameObject lettresArtistiquesPasCellesQuiTeSuivent;
@@ -32,7 +30,7 @@ public class TriggerMailDest : MonoBehaviour
             {
                 GameStats.GoodScore += (int)GameStats.ScoreTable.Mail;
                 lettres.SetActive(false);
-                canvas.enabled = false;
+                canvas.SetActive(false);
                 Vector3 newPos = new Vector3(-9.97f, -5.22f, 0f);
                 Vector3 newScale = new Vector3(0.76f, 0.76f, 0.76f);
                 lettresArtistiquesPasCellesQuiTeSuivent.transform.position = newPos;
@@ -47,7 +45,7 @@ public class TriggerMailDest : MonoBehaviour
             {
                 GameStats.BadScore += (int)GameStats.ScoreTable.Mail;
                 lettres.SetActive(false);
-                canvas.enabled = false;
+                canvas.SetActive(false);
                 poubelleRenderer.sprite = poubellePleine;
                 GameStats.BadScore += (int)GameStats.ScoreTable.Mail;
                 boxCollider.enabled = false;
@@ -56,12 +54,8 @@ public class TriggerMailDest : MonoBehaviour
             }
             else
             {
-                text.text = "Q pour déposer le courrier\nE pour le jeter à la poubelle";
+                canvas.SetActive(true);
             }
-        }
-        else if (boxCollider.IsTouching(_playerCollider))
-        {
-            text.text = "Il vous manque les lettres!";
         }
     }
 
@@ -69,7 +63,7 @@ public class TriggerMailDest : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            text.text = "";
+            canvas.SetActive(false);
         }
     }
 }

@@ -10,7 +10,7 @@ public class TriggerToilet : MonoBehaviour
 
     public float timeAmount = 10f;
     public Image image;
-    public Canvas canvas;
+    public GameObject canvas;
     private float _time;
 
     private Animator _playerAnimator;
@@ -40,7 +40,7 @@ public class TriggerToilet : MonoBehaviour
                 }
                 else
                 {
-                    canvas.gameObject.SetActive(false);
+                    canvas.SetActive(false);
                     GameStats.GoodScore += (int)GameStats.ScoreTable.Toilet;
                 }
             }
@@ -55,7 +55,7 @@ public class TriggerToilet : MonoBehaviour
                 else
                 {
                     GameStats.BadScore += (int)GameStats.ScoreTable.Toilet;
-                    canvas.enabled = false;
+                    canvas.SetActive(false);
                     for (int i = 0; i < animators.Length; i++)
                     {
                         animators[i].SetTrigger("Flood");
@@ -67,7 +67,7 @@ public class TriggerToilet : MonoBehaviour
                 _time = 0f;
                 image.fillAmount = _time / timeAmount;
                 _playerAnimator.SetBool(IsInteracting, false);
-                canvas.gameObject.SetActive(true);
+                canvas.SetActive(true);
             }
         }
 
@@ -77,7 +77,7 @@ public class TriggerToilet : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            canvas.gameObject.SetActive(false);
+            canvas.SetActive(false);
             _playerAnimator.SetBool(IsInteracting, false);
         }
     }
