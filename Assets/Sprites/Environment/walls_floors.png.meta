@@ -188,6 +188,9 @@ TextureImporter:
   - first:
       213: 5290265190159760275
     second: walls_floors_61
+  - first:
+      213: -8995742173991185884
+    second: walls_floors_empty
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1622,6 +1625,27 @@ TextureImporter:
       bones: []
       spriteID: 39b3613592cca6940800000000000000
       internalID: 5290265190159760275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls_floors_empty
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422514c7724b82380800000000000000
+      internalID: -8995742173991185884
       vertices: []
       indices: 
       edges: []

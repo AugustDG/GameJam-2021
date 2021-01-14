@@ -439,8 +439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -632.48615, y: 382.04868}
-  m_SizeDelta: {x: 520.467, y: 190.278}
+  m_AnchoredPosition: {x: -582.01, y: 363.6}
+  m_SizeDelta: {x: 621.42, y: 227.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168126446
 MonoBehaviour:
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a3a3761b402dc34b86fdb0f6f21bf41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 397430af6fd726c49a942c151cc68c5c, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 2.5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 21300000, guid: 0e5ef2222dfcbfc46a4aa7ae538ff7bf, type: 3}
@@ -763,11 +763,11 @@ RectTransform:
   m_Father: {fileID: 518934138}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -744.31, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 25}
   m_SizeDelta: {x: 250, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &271962904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,11 +1367,11 @@ RectTransform:
   m_Father: {fileID: 518934138}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -719.31, y: 164}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 145}
   m_SizeDelta: {x: 300, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &601644843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,8 +1911,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.35, y: -4.15}
-  m_SizeDelta: {x: 481.62, y: 178}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 480, y: 155}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978503145
 MonoBehaviour:
@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Appuyez sur <i>Entr\xE9e</i> pour d\xE9filer entre les options de dyschromatopie!"
+  m_text: "Appuyez sur <i>Entr\xE9e</i> pour faire d\xE9filer les options de dyschromatopsie!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
   m_sharedMaterial: {fileID: 2947310121108995066, guid: 37455dcaa1bd89d4db88ae4fb930155c, type: 2}
@@ -1961,7 +1961,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.1
+  m_fontSize: 47.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
