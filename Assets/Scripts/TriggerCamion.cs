@@ -16,7 +16,7 @@ public class TriggerCamion : MonoBehaviour
 
     private Animator _playerAnimator;
 
-    public Trigger_pistol triggerPistolScript;
+    public TriggerPistol triggerPistolScript;
     public GameObject actualPistol;
     private bool _fueledUp = false;
 
