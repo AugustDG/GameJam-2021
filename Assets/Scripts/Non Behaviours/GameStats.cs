@@ -18,8 +18,9 @@ public static class GameStats
 
     public enum ScoreTable {
         Box = 10,
-        Toilet = 25,
+        Toilet = 30,
         Pipes = 15,
-        Fuel = 50
+        Fuel = 50,
+        Mail = 20
     }
 }

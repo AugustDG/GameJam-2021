@@ -13,6 +13,5 @@ public class SplitterAnimation : MonoBehaviour
     {
         splitterAnimator.SetBool("isLeft", section4.isActivated);
         splitterAnimator.SetBool("isRight", section2.isActivated);
-        Debug.Log(section4.isActivated + " " + section2.isActivated);
     }
 }

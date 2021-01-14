@@ -13,6 +13,7 @@ public class CharacterController2D : MonoBehaviour
 
     public int derniereDir = 0;
     public GameObject actualPistol;
+    public GameObject letters;
 
     private void Awake()
     {
@@ -93,7 +94,7 @@ public class CharacterController2D : MonoBehaviour
         Vector3 targetVelocity = new Vector2(0, 0);
         
         _animator.SetInteger(Direction, direction);
-        if (actualPistol.activeSelf)
+        if (actualPistol.activeSelf || letters.activeSelf)
             _animator.SetInteger(Direction, derniereDir);
 
         switch (direction)
