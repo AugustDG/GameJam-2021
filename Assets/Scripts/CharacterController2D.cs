@@ -11,6 +11,9 @@ public class CharacterController2D : MonoBehaviour
     private Animator _animator;
     private static readonly int Direction = Animator.StringToHash("Direction");
 
+    public int derniereDir = 0;
+    public Trigger_pistol triggerPistolScript;
+
     private void Awake()
     {
         _mRigidbody2D = GetComponent<Rigidbody2D>();
@@ -32,12 +35,18 @@ public class CharacterController2D : MonoBehaviour
         else if (Input.GetButton("Right"))
         {
             if (direction >= 4)
+            {
+                derniereDir = 1;
                 direction = 1;
+            }
         }
         else if (Input.GetButton("Left"))
         {
             if (direction >= 4)
+            {
+                derniereDir = 3;
                 direction = 3;
+            }
         }
         else
         {
@@ -56,6 +65,8 @@ public class CharacterController2D : MonoBehaviour
                     direction = 7;
                     break;
             }
+            if (derniereDir == 1) derniereDir = 5;
+            if (derniereDir == 3) derniereDir = 7;
         }
         if (Input.GetButtonUp("Up"))
         {
@@ -84,9 +95,11 @@ public class CharacterController2D : MonoBehaviour
         Vector3 targetVelocity = new Vector2(0, 0);
         
         _animator.SetInteger(Direction, direction);
-        
+        if (triggerPistolScript.pistolPickedUp)
+            _animator.SetInteger(Direction, derniereDir);
+
         switch (direction)
-        {
+        {   
             case 0:
                 targetVelocity = new Vector2(0, runSpeed * 10f);
                 break;
