@@ -53,6 +53,18 @@ TextureImporter:
   - first:
       213: -6175064630558139745
     second: ground_fences_16
+  - first:
+      213: 558398649994999296
+    second: ground_fences_17
+  - first:
+      213: -6364243087819248857
+    second: ground_fences_18
+  - first:
+      213: 8615252143093732705
+    second: ground_fences_19
+  - first:
+      213: -3792806049256436455
+    second: ground_fences_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -283,7 +295,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 13}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -304,7 +316,7 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 13}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -319,13 +331,13 @@ TextureImporter:
       name: ground_fences_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 96
+        y: 32
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 13}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -340,7 +352,7 @@ TextureImporter:
       name: ground_fences_7
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 16
         width: 16
         height: 16
@@ -361,7 +373,7 @@ TextureImporter:
       name: ground_fences_8
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 16
         width: 16
         height: 16
@@ -382,7 +394,7 @@ TextureImporter:
       name: ground_fences_9
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 16
         width: 16
         height: 16
@@ -403,7 +415,7 @@ TextureImporter:
       name: ground_fences_10
       rect:
         serializedVersion: 2
-        x: 80
+        x: 48
         y: 16
         width: 16
         height: 16
@@ -424,8 +436,8 @@ TextureImporter:
       name: ground_fences_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -445,13 +457,13 @@ TextureImporter:
       name: ground_fences_12
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -466,13 +478,13 @@ TextureImporter:
       name: ground_fences_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 96
+        y: 16
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 0, z: 3, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -487,7 +499,7 @@ TextureImporter:
       name: ground_fences_14
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 0
         width: 16
         height: 16
@@ -508,7 +520,7 @@ TextureImporter:
       name: ground_fences_15
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 0
         width: 16
         height: 16
@@ -529,7 +541,7 @@ TextureImporter:
       name: ground_fences_16
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 0
         width: 16
         height: 16
@@ -542,6 +554,90 @@ TextureImporter:
       bones: []
       spriteID: f9ad0867f63cd4aa0800000000000000
       internalID: -6175064630558139745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_fences_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00672081d94dfb700800000000000000
+      internalID: 558398649994999296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_fences_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b6c4e71aaada7a0800000000000000
+      internalID: -6364243087819248857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_fences_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1655687bd268f8770800000000000000
+      internalID: 8615252143093732705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_fences_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d0e1c4efe3d5bc0800000000000000
+      internalID: -3792806049256436455
       vertices: []
       indices: 
       edges: []
