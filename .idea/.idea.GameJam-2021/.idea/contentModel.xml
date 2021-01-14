@@ -48,6 +48,7 @@
           <e p="Utility" t="Include">
             <e p="LeaderboardContainer.cs" t="Include" />
             <e p="LoopConstinuously.cs" t="Include" />
+            <e p="PlaySound.cs" t="Include" />
             <e p="RotateContinusously.cs" t="Include" />
             <e p="Testing.cs" t="Include" />
           </e>

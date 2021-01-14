@@ -8,6 +8,7 @@ TagManager:
   - CornerDown
   - CornerLeft
   - CornerRight
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Conveyor
   - CSplitter
   - Box
-  - 
+  - PostProcess
   - 
   - 
   - 

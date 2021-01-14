@@ -30,9 +30,9 @@ public class BoxMovement : MonoBehaviour
     {
         if (!isDecided)
         {
-            if (splitterTrigger.isActivated)
+            if (splitterTrigger.hasBoxWaiting)
             {
-                if (box.transform.position.y <= 7)
+                if (box.transform.position.y <= 6.5)
                 //checker si le highlight est on, s'il ne l'est pas, on le turn on, et apres on fait un else (s'il n'est pas activé) et on desactive SI il est activé
                 {
                     if (Input.GetButtonDown("FireGood"))
@@ -88,7 +88,7 @@ public class BoxMovement : MonoBehaviour
         if (isDecided)
         {
             int tempDirection = direction;
-            if (box.transform.position.x >= 0.75 && box.transform.position.x <= 1.25 && box.transform.position.y > 6)
+            if (box.transform.position.x >= -0.8f && box.transform.position.x <= -0.2f && box.transform.position.y > 5.61f)
             {
                 tempDirection = 2;
             }
@@ -109,7 +109,7 @@ public class BoxMovement : MonoBehaviour
                     break;
             }
         }
-        else if (!isDecided && box.transform.position.y <= 6.75)
+        else if (!isDecided && box.transform.position.y <= 6.25)
         {
             mRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
