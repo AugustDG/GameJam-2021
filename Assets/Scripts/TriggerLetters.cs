@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TriggerLetters : MonoBehaviour
 {
-    public TMP_Text text;
+    public GameObject canvas;
     public GameObject player;
     public BoxCollider2D boxCollider;
     private BoxCollider2D _playerCollider;
@@ -43,7 +43,7 @@ public class TriggerLetters : MonoBehaviour
             }
             else
             {
-                text.text = "Q ou E pour intéragir avec les lettres";
+                canvas.SetActive(true);
             }
         }
 
@@ -53,7 +53,7 @@ public class TriggerLetters : MonoBehaviour
     {
         if (other.gameObject.Equals(player))
         {
-            text.text = "";
+            canvas.SetActive(false);
         }
     }
 }
