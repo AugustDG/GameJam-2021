@@ -77,7 +77,7 @@ public class LeaderboardManager : MonoBehaviour
         await MongoClient.Instance.DataCollection.InsertOneAsync(infoToSend);
 
         _leaderboardPlayers = await MongoClient.Instance.DataCollection
-            .Find(info => info.GoodScore > 0 && info.BadScore > 0 && info.id != infoToSend.id).ToListAsync();
+            .Find(info => info.GoodScore > 0 && info.BadScore > 0 && info.id != infoToSend.id).Sort(Builders<PlayerInfo>.Sort.Descending(info => info.BadScore)).Limit(50).ToListAsync();
 
         loading.SetActive(false);
 

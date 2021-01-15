@@ -9,12 +9,19 @@ public class AudioManager : MonoBehaviour
     public AudioClip bossMenuClip;
 
     private AudioSource _source;
-    
+
     public void Awake()
     {
         DontDestroyOnLoad(gameObject);
 
         GameEvents.MainSceneLoading += MainSceneLoadingHandler;
+        GameEvents.CutsceneStarted += CutsceneStartedHandler;
+    }
+
+    private void CutsceneStartedHandler(object sender, EventArgs e)
+    {
+        _source.clip = bossMenuClip;
+        _source.Play();
     }
 
     // Start is called before the first frame update

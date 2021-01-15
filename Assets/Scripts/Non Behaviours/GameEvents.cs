@@ -8,5 +8,5 @@ public static class GameEvents
     public static EventHandler ClockStarted;
     public static EventHandler ShowLeaderboard;
     public static EventHandler MainSceneLoading;
-    public static EventHandler<string[]> CutsceneStarted;
+    public static EventHandler CutsceneStarted;
 }

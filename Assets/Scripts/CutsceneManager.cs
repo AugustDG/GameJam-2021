@@ -15,7 +15,7 @@ public class CutsceneManager : MonoBehaviour
 
     public void Awake()
     {
-        GameEvents.CutsceneStarted += ActivateCutscene;
+        //GameEvents.CutsceneStarted += ActivateCutscene;
     }
 
     public void Start()

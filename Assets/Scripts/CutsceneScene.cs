@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -13,6 +14,7 @@ public class CutsceneScene : MonoBehaviour
         if (Input.anyKey)
         {
             DOTween.KillAll();
+            GameEvents.MainSceneLoading.Invoke(this, EventArgs.Empty);
             SceneManager.LoadSceneAsync(2);
         }
     }

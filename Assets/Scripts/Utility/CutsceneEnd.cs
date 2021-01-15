@@ -5,14 +5,8 @@ using UnityEngine;
 
 public class CutsceneEnd : MonoBehaviour
 {
-    private bool _hidden = true;
-
-    private void Update()
+    public void ShowLeaderboard()
     {
-        if (Input.anyKey && _hidden)
-        {
-            _hidden = false;
-            GameEvents.ShowLeaderboard.Invoke(this, EventArgs.Empty);
-        }
+        GameEvents.ShowLeaderboard.Invoke(this, EventArgs.Empty);
     }
 }

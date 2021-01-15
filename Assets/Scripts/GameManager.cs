@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.Tab))
         {
-            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(Screen.height, 0.5f).Play();
+            tabletBg.GetComponent<RectTransform>().DoAnchorPosY(1080, 0.5f).Play();
         }
 
         timerText.text = _timeString;
@@ -71,8 +71,7 @@ public class GameManager : MonoBehaviour
 
         DOTween.KillAll();
         
+        GameEvents.CutsceneStarted.Invoke(this, EventArgs.Empty);
         SceneManager.LoadSceneAsync(GameStats.BadScore - GameStats.GoodScore <= 50 ? 3 : 4);
-
-        print("Finished!");
     }
 }

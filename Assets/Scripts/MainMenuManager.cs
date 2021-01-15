@@ -8,8 +8,8 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        GameEvents.MainSceneLoading.Invoke(this, EventArgs.Empty);
         DOTween.KillAll();
+        GameEvents.CutsceneStarted.Invoke(this, EventArgs.Empty);
         SceneManager.LoadSceneAsync(1);
     }
 
