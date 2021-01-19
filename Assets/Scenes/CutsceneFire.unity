@@ -807,6 +807,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3102210790590275122, guid: f26d6259247fa7c4eb827bf88ccf0e31, type: 3}
+      propertyPath: m_MovementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102210790590275122, guid: f26d6259247fa7c4eb827bf88ccf0e31, type: 3}
+      propertyPath: m_ScrollSensitivity
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 3102210790636087304, guid: f26d6259247fa7c4eb827bf88ccf0e31, type: 3}
       propertyPath: m_Pivot.x
       value: 0
