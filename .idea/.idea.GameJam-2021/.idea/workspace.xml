@@ -8,66 +8,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E272CAB7-0219-4EF8-AB5F-B5D9D0D4C417/74/d881752e/ColorblindTypes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/e9/279c7413/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/RotateContinusously.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/CutsceneEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FadeOff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FadeOff.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Testing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/C#/GameSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/C#/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/PlayerInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/RotateContinusously.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoopConstinuously.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ListContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/Mongo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_pipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Trigger_toilet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PlaySound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ColorAccessibility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Materials/ColorAccessibilityShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Accessibility/ColorBlindFilter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Accessibility/ChannelMixer.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Section1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BoxMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCSplitter.cs" />
-        <option value="$PROJECT_DIR$/Library/PackageCache/com.sohne.colorblindness@5bedd7c104/Scripts/Colorblindness.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomColorblindness.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InfoPanelContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LeaderboardContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/FadeOff.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerPipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerToilet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CutsceneEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Non Behaviours/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CutsceneScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeaderboardManager.cs" />
-      </list>
-    </option>
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadDamnIt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/CutsceneEnd.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1mzMwxujvHV8DIrfe48eTZ1urQm" />
   <component name="ProjectViewState">
@@ -79,6 +28,7 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008957" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,7 +49,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -108,7 +58,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -125,6 +75,7 @@
       <workItem from="1610546337197" duration="10838000" />
       <workItem from="1610635621069" duration="11815000" />
       <workItem from="1610724011890" duration="1769000" />
+      <workItem from="1611029098305" duration="1245000" />
     </task>
     <servers />
   </component>
